@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.footer {
+  background-color: $green;
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+}
+
+.footer__logo {
+  max-width: rem(120);
+}
+
+.footer__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer__sns {
+  display: flex;
+  margin-top: rem(16);
+}
+
+.footer__sns-icon {
+  display: block;
+  max-width: rem(24);
+  width: 100%;
+}
+
+.footer__sns-icon + .footer__sns-icon {
+  margin-left: rem(16);
+}
+
+.footer__sns-icn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer__nav {
+  margin-top: rem(40);
+}
