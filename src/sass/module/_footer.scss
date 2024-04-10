@@ -4,10 +4,22 @@
   background-color: $green;
   padding-top: rem(48);
   padding-bottom: rem(56);
+  @include mq("md") {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+
+.footer__inner.inner {
+  max-width: 1008px;
 }
 
 .footer__logo {
   max-width: rem(120);
+  width: 100%;
+  @include mq("md") {
+    max-width: rem(200);
+  }
 }
 
 .footer__logo img {
@@ -37,6 +49,17 @@
   object-fit: contain;
 }
 
-.footer__nav {
+.footer__copyright {
+  text-align: center;
   margin-top: rem(40);
+  display: block;
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.footer__copyright p {
+  font-size: rem(12);
+  font-family: $font-family-en;
+  color: $white;
 }

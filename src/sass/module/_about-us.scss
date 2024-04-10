@@ -1,0 +1,108 @@
+@use "global" as *;
+
+.about-us {
+  @include mq("md") {
+    position: relative;
+  }
+}
+
+.about-us__contents {
+  @include mq("md") {
+    position: absolute;
+    display: flex;
+    max-width: rem(840);
+    width: 100%;
+    top: 56%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.about-us__title {
+  font-family: $font-family-en;
+  font-size: rem(40);
+  color: $green;
+  margin-top: rem(40);
+  @include mq("md") {
+    font-size: rem(80);
+    line-height: 1.25;
+    margin-top: 0;
+    width: 100%;
+    color: $white;
+  }
+}
+
+.about-us__text-wrap {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-left: rem(40);
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.about-us__text {
+  font-size: rem(16);
+  font-family: $font-family-jp;
+  color: $dark-green;
+  line-height: 1.5;
+  @include mq("md") {
+    margin-left: rem(40);
+    color: $white;
+  }
+}
+
+.about-us__button {
+  margin-top: rem(50);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.about-us__img-wrap {
+}
+
+.about-us__img-wrap {
+  position: relative;
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.about-us__img-left {
+  width: 37.101%;
+}
+
+.about-us__img-left img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 128 / 194;
+}
+
+.about-us__img-right {
+  position: absolute;
+  width: 81.449%;
+  top: 12.264%;
+  left: 18.55%;
+  z-index: -1;
+}
+
+.about-us__img-right img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 281 / 186;
+}
+
+.about-us__coral::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/coral.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(194);
+  height: rem(181);
+  top: 0;
+  left: 0;
+}

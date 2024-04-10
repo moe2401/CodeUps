@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.drawer-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: rem(16);
+  padding: 0 rem(37);
+  @include mq("md") {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: rem(120);
+  }
+}
+
+.drawer-nav__contents {
+  color: $white;
+  margin-top: rem(40);
+}
+
+.drawer-nav__title {
+  position: relative;
+  font-weight: $bold;
+  font-size: rem(16);
+  display: flex;
+  align-items: center;
+  padding: rem(12) 0;
+}
+
+.drawer-nav__title::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/star-fish.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  // top: 0;
+  left: rem(-19);
+  display: inline-block;
+  width: rem(18);
+  height: rem(18);
+}
+
+.drawer-nav__title:not(:first-child) {
+  padding: rem(20) 0;
+}
+
+.drawer-nav__item {
+  // margin-top: rem(24);
+  text-indent: rem(2);
+}
+
+.drawer-nav__item a {
+  font-weight: normal;
+  font-size: rem(16);
+  display: block;
+  padding: rem(12) 0;
+}

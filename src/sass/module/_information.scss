@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.information {
+  background-color: $light-green;
+}
+
+.information__wrap {
+  margin-top: rem(24);
+
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.information__img {
+  width: 100%;
+}
+
+.information__img img {
+  width: 100%;
+  aspect-ratio: 345 / 227;
+  object-fit: cover;
+}
+
+.information__body {
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(48);
+  }
+}
+
+.information__title {
+  font-size: rem(20);
+  font-family: $font-family-jp;
+  font-weight: $bold;
+  color: $dark-green;
+  padding-bottom: rem(4);
+  border-bottom: 1px solid $green;
+  display: block;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.information__text {
+  margin-top: rem(8);
+  font-size: rem(16);
+  font-family: $font-family-jp;
+  color: $dark-green;
+  line-height: 1.5;
+}
+
+.information__button {
+  margin-top: rem(40);
+  text-align: center;
+}

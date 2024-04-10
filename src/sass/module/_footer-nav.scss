@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.footer-nav__contents {
+  color: $white;
+}
+
+.footer-nav__title {
+  position: relative;
+  font-weight: $bold;
+  font-size: rem(16);
+  display: flex;
+  align-items: center;
+  padding: rem(12) 0;
+  margin-left: rem(4);
+}
+
+.footer-nav__title::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/star-fish.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: rem(-19);
+  display: inline-block;
+  width: rem(18);
+  height: rem(18);
+}
+
+.footer-nav__title:not(:first-child) {
+  padding: rem(20) 0;
+}
+
+.footer-nav__item {
+  text-indent: rem(2);
+}
+
+.footer-nav__item a {
+  font-weight: normal;
+  font-size: rem(16);
+  display: block;
+  padding: rem(12) 0;
+}

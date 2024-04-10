@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.voice-card__item a {
+  padding: rem(15) rem(16) rem(24);
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+  height: 100%;
+  display: block;
+  background-color: $white;
+  @include mq("md") {
+  }
+}
+
+.voice-card__wrap {
+  display: flex;
+  align-items: flex-end;
+}
+
+.voice-card__meta {
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.voice-card__age {
+  font-size: rem(12);
+  color: $dark-green;
+  @include mq("md") {
+  }
+}
+
+.voice-card__tag {
+  font-size: rem(12);
+  line-height: 1;
+  border: 1px solid $green;
+  padding: rem(4) rem(12);
+  display: inline-block;
+  color: $green;
+  @include mq("md") {
+  }
+}
+
+.voice-card__title {
+  font-size: rem(16);
+  margin-top: rem(13);
+  font-weight: $medium;
+  font-family: $font-family-jp;
+  border-bottom: 1px solid $green;
+  padding-bottom: mt(4);
+  @include mq("md") {
+    margin-top: rem(8);
+  }
+}
+
+.voice-card__text {
+  margin-top: rem(8);
+}
+
+.voice-card__img {
+  max-width: rem(180);
+  width: 100%;
+  margin-left: rem(13);
+  @include mq("md") {
+    margin-left: rem(16);
+  }
+}
+
+.voice-card__img img {
+  width: 100%;
+  aspect-ratio: 151 / 117;
+  object-fit: cover;
+}
