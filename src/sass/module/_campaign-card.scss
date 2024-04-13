@@ -18,6 +18,9 @@
   width: 100%;
   aspect-ratio: 280 / 188;
   object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 333 / 223;
+  }
 }
 
 .campaign-card__item-body {

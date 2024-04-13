@@ -49,48 +49,87 @@ jQuery(function ($) {
     },
   });
 
-  //トップへ戻るボタン
-  $(function () {
-    const pagetop = $(".page-top-button");
-    pagetop.hide(); //最初はボタンを非表示
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        //100px以上スクロールしたら
-        pagetop.fadeIn(); //ボタンをフェードイン
-      } else {
-        pagetop.fadeOut(); //ボタンをフェードアウト
-      }
-    });
-    pagetop.click(function () {
-      $("body,html").animate(
-        {
-          scrollTop: 0, //上から0pxの位置に戻る
-        },
-        800
-      ); //800ミリ秒かけて上に戻る
-      return false;
-    });
+  //ページトップ
+  const pageTop = $(".page-top-button");
+  pageTop.hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      pageTop.fadeIn();
+    } else {
+      pageTop.fadeOut();
+    }
+  });
+  pageTop.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      800
+    );
+    return false;
   });
 
-  //フッター手前で止まるボタン
-  $(document).ready(function () {
-    $(".page-top-button").hide();
-    $(window).on("scroll", function () {
-      scrollHeight = $(document).height(); //ドキュメントの高さ
-      scrollPosition = $(window).height() + $(window).scrollTop(); //現在の位置
-      footHeight = $("footer").innerHeight(); //フッターの高さ
-      if (scrollHeight - scrollPosition <= footHeight) {
-        //ドキュメントの高さと現在の位置の差がフッターの高さ以下のとき
-        $(".page-top-button").css({
-          position: "absolute",
-          bottom: footHeight + 0,
-        }); //pisitionをabsoluteに変更
-      } else {
-        //それ以外の場合は
-        $(".page-top-button").css({ position: "fixed", bottom: "0" }); //固定で表示
-      }
-    });
+  // フッター手前でストップ
+  $(".page-top-button").hide();
+  $(window).on("scroll", function () {
+    const scrollHeight = $(document).height();
+    const scrollPosition = $(window).height() + $(window).scrollTop();
+    const footHeight = $("footer").innerHeight();
+    if (scrollHeight - scrollPosition <= footHeight) {
+      $(".page-top-button").css({
+        position: "absolute",
+        bottom: footHeight + 50,
+      });
+    } else {
+      $(".page-top-button").css({
+        position: "fixed",
+        bottom: 30,
+      });
+    }
   });
+
+  // //トップへ戻るボタン
+  // $(function () {
+  //   const pagetop = $(".page-top-button");
+  //   pagetop.hide(); //最初はボタンを非表示
+  //   $(window).scroll(function () {
+  //     if ($(this).scrollTop() > 100) {
+  //       //100px以上スクロールしたら
+  //       pagetop.fadeIn(); //ボタンをフェードイン
+  //     } else {
+  //       pagetop.fadeOut(); //ボタンをフェードアウト
+  //     }
+  //   });
+  //   pagetop.click(function () {
+  //     $("body,html").animate(
+  //       {
+  //         scrollTop: 0, //上から0pxの位置に戻る
+  //       },
+  //       800
+  //     ); //800ミリ秒かけて上に戻る
+  //     return false;
+  //   });
+  // });
+
+  // //フッター手前で止まるボタン
+  // $(document).ready(function () {
+  //   $(".page-top-button").hide();
+  //   $(window).on("scroll", function () {
+  //     scrollHeight = $(document).height(); //ドキュメントの高さ
+  //     scrollPosition = $(window).height() + $(window).scrollTop(); //現在の位置
+  //     footHeight = $("footer").innerHeight(); //フッターの高さ
+  //     if (scrollHeight - scrollPosition <= footHeight) {
+  //       //ドキュメントの高さと現在の位置の差がフッターの高さ以下のとき
+  //       $(".page-top-button").css({
+  //         position: "absolute",
+  //         bottom: footHeight + 0,
+  //       }); //pisitionをabsoluteに変更
+  //     } else {
+  //       //それ以外の場合は
+  //       $(".page-top-button").css({ position: "fixed", bottom: "0" }); //固定で表示
+  //     }
+  //   });
+  // });
 
   // var speed = 700; // speed変数を定義
   // $(".information__img, .voice-card__img, .price__img").each(function () {

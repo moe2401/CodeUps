@@ -3,7 +3,7 @@
 .button {
   position: relative;
   width: rem(202);
-  height: 100%;
+  // height: 100%;
   font-size: rem(14);
   font-family: $font-family-en;
   background-color: $green;
@@ -13,10 +13,12 @@
   align-items: center;
   padding: rem(16) rem(10);
   line-height: calc(22 / 14);
-  // z-index: 10;
+  border: 1px solid $green;
+  z-index: 10;
 }
 
 .button::before {
+  //ボタンの周りのボーダー
   position: absolute;
   content: "";
   border: 1px solid $green;
@@ -27,11 +29,29 @@
   z-index: -1;
 }
 
+.button::after {
+  color: $green;
+  background-color: $white;
+  // background: #ff701e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  // transform: scale(0, 1);
+  // transform-origin: left top;
+  // transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -1;
+}
+
 .button span {
   display: inline-block;
 }
 
 .button span::after {
+  //矢印画像
   display: inline-block;
   margin-left: rem(8);
   content: "";
@@ -44,12 +64,15 @@
 }
 
 .button:hover {
+  //ホバーしたら背景白、文字緑
   color: $green;
   background-color: $white;
-  border: 1px solid $green;
+  // transform: scale(1, 1);
+  // border: 1px solid $green;
 }
 
 .button:hover span::after {
+  //ホバーしたら矢印画像変わる
   content: "";
   background-image: url(../images/common/button-arrow_2.svg);
   width: rem(40);
@@ -58,40 +81,6 @@
   background-size: contain;
 }
 
-// .button span {
-//   position: relative;
-//   display: inline-block;
-//   height: inherit;
-//   padding: rem(16) rem(88) rem(16) rem(40);
+// .button:hover::after {
+//   transform: scale(1, 1);
 // }
-
-// .button span::before {
-//   position: absolute;
-//   content: "";
-//   // background-image: url(../images/common/button-arrow_2.svg);
-//   width: rem(6);
-//   height: rem(1);
-//   background-color: $white;
-//   border-radius: 2px;
-//   transform: rotate(45deg);
-//   top: 45.5%;
-//   right: rem(39);
-// }
-
-// .button span::after {
-//   position: absolute;
-//   content: "";
-//   width: rem(40);
-//   height: rem(1);
-//   background-color: $white;
-//   border-radius: 2px;
-//   top: 50%;
-//   margin-left: rem(8);
-// }
-
-// .button span:hover::before,
-// .button span:hover::after {
-//   background-color: $green;
-// }
-
-// background-image: url(../images/common/button-arrow_1);
