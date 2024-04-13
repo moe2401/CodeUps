@@ -1,1 +1,9 @@
 @use "global" as *;
+
+.campaign-layout {
+  margin-top: rem(24);
+  @include mq("md") {
+    // position: relative;
+    margin-top: rem(120);
+  }
+}

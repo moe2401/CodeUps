@@ -1,5 +1,32 @@
 @use "global" as *;
 
+.voice::before {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    background-image: url(../images/common/voice-bg-fish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(301);
+    height: rem(138);
+    top: 0;
+    left: calc(50% - min(50vw, rem(650)));
+  }
+}
+.voice::after {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    background-image: url(../images/common/voice-seahorse.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(71);
+    height: rem(162);
+    bottom: rem(-25);
+    right: calc(50% - min(50vw, rem(540)));
+  }
+}
+
 .voice__items {
   margin-top: rem(40);
   display: grid;

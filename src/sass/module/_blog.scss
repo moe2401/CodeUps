@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.blog {
+  @include mq("md") {
+    position: relative;
+    padding-top: rem(100);
+  }
+}
+
+.blog::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60.168%;
+  background-image: url(../images/common/blog-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.blog::after {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    background-image: url(../images/common/blog-bg-fish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(437);
+    height: rem(201);
+    top: rem(17);
+    left: calc(50% - min(50vw, rem(670)));
+  }
+}
+
+.blog__header-title {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.blog__header-title span {
+  @include mq("md") {
+    color: $light-green;
+  }
+}

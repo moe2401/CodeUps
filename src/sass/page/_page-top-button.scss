@@ -3,16 +3,16 @@
 .page-top-button {
   position: fixed;
   z-index: 9000;
-  right: 15px;
-  bottom: 100px;
-  width: 48px;
-  height: 48px;
+  right: rem(15);
+  bottom: rem(100);
+  width: rem(48);
+  height: rem(48);
   cursor: pointer;
 
   @include mq("md") {
-    width: 28px;
-    height: 28px;
-    right: 15px;
-    bottom: 74px;
+    width: rem(80);
+    height: rem(80);
+    right: rem(15);
+    bottom: rem(74);
   }
 }

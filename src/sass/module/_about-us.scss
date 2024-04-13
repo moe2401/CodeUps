@@ -2,9 +2,30 @@
 
 .about-us {
   @include mq("md") {
-    position: relative;
   }
 }
+
+.about-us::before {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    background-image: url(../images/common/coral.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: rem(194);
+    height: rem(181);
+    bottom: rem(-125);
+    right: calc(50% - min(50vw, rem(650)));
+  }
+}
+
+// .about-us__wrapper {
+//   @include mq("md") {
+//     // max-width: rem(1280);
+//     width: 100%;
+//     margin: 0 auto;
+//   }
+// }
 
 .about-us__contents {
   @include mq("md") {
@@ -95,14 +116,10 @@
   aspect-ratio: 281 / 186;
 }
 
-.about-us__coral::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/common/coral.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: rem(194);
-  height: rem(181);
-  top: 0;
-  left: 0;
-}
+// .about-us__coral {
+//   display: none;
+//   @include mq("md") {
+//     position: relative;
+//     display: block;
+//   }
+// }
