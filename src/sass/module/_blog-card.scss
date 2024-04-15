@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .blog-card {
-  margin-top: rem(24);
+  margin-top: rem(30);
   display: grid;
-  gap: rem(40);
+  gap: rem(38);
   @include mq("md") {
     grid-template-columns: repeat(3, 1fr);
     margin-top: rem(80);
@@ -11,6 +11,9 @@
 }
 
 .blog-card__item {
+  max-width: 333px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .blog-card__item a {
@@ -32,7 +35,7 @@
 }
 
 .blog-card__body {
-  margin-top: rem(24);
+  margin-top: rem(18);
 }
 
 .blog-card__meta {
@@ -49,7 +52,7 @@
 
 .blog-card__category {
   font-family: $font-family-jp;
-  font-size: rem(24);
+  font-size: rem(16);
   font-weight: $medium;
   color: $dark-green;
 }
@@ -57,9 +60,4 @@
 .blog-card__text {
   margin-top: rem(16);
   color: $dark-green;
-}
-
-.blog__button {
-  margin-top: rem(40);
-  text-align: center;
 }

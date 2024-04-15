@@ -5,44 +5,43 @@
   height: 100vh;
   position: relative;
   z-index: 1;
-  // min-height: prem(400);
 }
 
 .mv__inner {
   height: inherit;
-  // min-height: inherit;
 }
 
 .mv__swiper,
 .mv__swiper .swiper-img,
 .mv__swiper .swiper-img img {
   height: inherit;
-  // min-height: inherit;
 }
 
 .mv__swiper .swiper-img img {
   width: 100%;
   object-fit: cover;
-  // aspect-ratio: 1440 / 768;
 }
 
 .mv__title-wrap {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 52.8%;
   transform: translate(-50%, -50%);
-  width: 100%;
   z-index: 10;
   text-align: center;
+  @include mq("md") {
+    top: 50%;
+    left: 51.5%;
+  }
 }
 
 .mv__title {
   font-family: $font-family-en2;
   font-size: rem(40);
+  font-weight: normal;
   letter-spacing: 0.54em;
   color: $white;
   @include mq("md") {
-    margin-top: rem(80);
     font-size: rem(80);
   }
 }

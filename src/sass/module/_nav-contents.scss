@@ -1,13 +1,16 @@
 @use "global" as *;
 
+.nav-contents {
+  // padding: 0 rem(37);
+}
+
 .nav-contents__wrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: rem(16);
-  padding-left: rem(18);
-  padding-right: rem(11);
-  margin-top: rem(28);
-  max-width: rem(335);
+  // column-gap: rem(7);
+  row-gap: rem(35);
+  margin-top: rem(40);
+  // max-width: rem(335);
   width: 100%;
 
   @include mq("md") {
@@ -20,16 +23,24 @@
 
 .nav-contents__contents {
   color: $white;
+  padding-left: rem(18);
 }
+
+// .nav-contents__contents:nth-of-type(2n + 1) {
+//   margin-top: rem(24);
+// }
 
 .nav-contents__title {
   position: relative;
   font-weight: $bold;
   font-size: rem(16);
   display: flex;
-  align-items: center;
-  padding: rem(12) 0;
+  // align-items: center;
+  // padding: rem(12) 0;
   margin-left: rem(4);
+  @include mq("md") {
+    margin-left: 0;
+  }
 }
 
 .nav-contents__title::before {
@@ -38,19 +49,19 @@
   background-image: url(../images/common/star-fish.png);
   background-repeat: no-repeat;
   background-size: contain;
-  // top: 0;
-  left: rem(-19);
+  top: rem(1);
+  left: rem(-23);
   display: inline-block;
   width: rem(18);
   height: rem(18);
 }
 
 .nav-contents__title:not(:first-child) {
-  padding: rem(20) 0;
+  margin-top: rem(35);
 }
 
 .nav-contents__item {
-  // margin-top: rem(24);
+  margin-top: rem(17);
   text-indent: rem(2);
 }
 
@@ -58,5 +69,5 @@
   font-weight: normal;
   font-size: rem(16);
   display: block;
-  padding: rem(12) 0;
+  // padding: rem(12) 0;
 }

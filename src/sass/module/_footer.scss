@@ -10,8 +10,14 @@
   }
 }
 
+.footer__wrap {
+  // margin-left: rem(15);
+}
+
 .footer__inner.inner {
-  max-width: 1008px;
+  @include mq("md") {
+    // max-width: 1008px;
+  }
 }
 
 .footer__logo {

@@ -2,19 +2,20 @@
 
 .campaign {
   overflow-x: hidden;
+  padding: rem(10) 0;
 }
 
 .campaign__swiper-wrap {
-  margin-top: rem(24);
+  margin-top: rem(19);
   margin-right: calc(50% - 50vw);
   width: 100vw;
   padding: 4px 0;
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(-9);
   }
 }
 
-.swiper {
+.campaign__swiper.swiper {
   padding: 4px 0;
 }
 
@@ -41,13 +42,17 @@
 }
 
 .swiper-button-prev::after {
-  top: rem(-28);
-  left: rem(900);
+  @include mq("md") {
+    top: rem(-35);
+    left: rem(991);
+  }
 }
 
 .swiper-button-next::after {
-  top: rem(-50);
-  left: rem(700);
+  @include mq("md") {
+    top: rem(-54);
+    left: rem(850);
+  }
 }
 
 .swiper-button-prev::after {
@@ -64,8 +69,8 @@
 
 .campaign__button {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(33);
   @include mq("md") {
-    margin-top: rem(80);
+    margin-top: rem(70);
   }
 }

@@ -3,7 +3,6 @@
 .section-header__title {
   font-size: rem(32);
   font-family: $font-family-en;
-  text-transform: capitalize;
   color: $dark-green;
   text-align: center;
   line-height: 1;
@@ -35,7 +34,7 @@
   color: $green;
   line-height: 1.5;
   text-align: center;
-  margin-top: rem(4);
+  margin-top: rem(8);
   @include mq("md") {
     margin-top: rem(8);
   }

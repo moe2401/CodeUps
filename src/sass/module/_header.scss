@@ -17,8 +17,13 @@
   height: inherit;
   display: flex;
   justify-content: space-between;
-  padding-right: rem(20);
-  padding-left: rem(40);
+  padding-right: rem(11);
+  padding-left: rem(15);
+
+  @include mq("md") {
+    padding-right: rem(20);
+    padding-left: rem(40);
+  }
 }
 
 .header__logo {
@@ -26,6 +31,9 @@
   width: 100%;
   height: inherit;
   z-index: 999;
+  @include mq("md") {
+    max-width: rem(133);
+  }
 }
 
 .header__logo a {
@@ -72,15 +80,6 @@
   line-height: 1;
   padding: 0 rem(20);
 }
-
-// .header__nav-item::after {
-//   position: absolute;
-//   width: 100%;
-//   height: rem(1);
-//   background: $white;
-//   top: 0;
-//   left: 0;
-// }
 
 .header__nav-item::after {
   content: "";
@@ -150,7 +149,8 @@
 
 .header__hamburger.is-open span:nth-of-type(1) {
   top: 0;
-  transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(37deg);
+  width: rem(40);
 }
 
 .header__hamburger.is-open span:nth-of-type(2) {
@@ -159,7 +159,8 @@
 
 .header__hamburger.is-open span:nth-of-type(3) {
   top: rem(-2);
-  transform: translateX(-50%) rotate(-45deg);
+  transform: translateX(-50%) rotate(-37deg);
+  width: rem(40);
 }
 
 .header__drawer {
@@ -171,10 +172,23 @@
   height: 100vh;
   background-color: $green;
   overflow-y: scroll;
+  padding-top: rem(62);
+  padding-bottom: rem(119);
+  padding-right: rem(15);
+  padding-left: rem(15);
 }
 
-.header__drawer-nav {
-  padding-top: rem(104);
-  padding-bottom: rem(111);
-  padding: rem(15);
-}
+// .header__drawer::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 80px; /* 上80pxの高さ */
+//   background-color: #fff; /* 背景色 */
+//   z-index: -1; /* 下の要素の下に隠れるように */
+// }
+
+// .header__drawer.is-open {
+//   transform: translateX(0);
+// }

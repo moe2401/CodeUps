@@ -1,15 +1,19 @@
 @use "global" as *;
 
 .contact::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/contact-bg-fish.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(109);
+  height: rem(50);
+  top: rem(-25);
+  right: calc(50% - min(50vw, rem(175)));
   @include mq("md") {
-    position: absolute;
-    content: "";
-    background-image: url(../images/common/contact-bg-fish.png);
-    background-repeat: no-repeat;
-    background-size: contain;
     width: rem(301);
     height: rem(138);
-    top: rem(-37);
+    top: rem(-26);
     right: calc(50% - min(50vw, rem(670)));
   }
 }
@@ -17,18 +21,18 @@
 .contact__wrap {
   @include mq("md") {
     display: flex;
-    justify-content: center;
+    // justify-content: space-between;
     align-items: center;
-    padding: rem(80) 0;
+    padding: rem(80) rem(112) rem(80) rem(50);
     box-shadow: rem(4) rem(4) rem(10) rgba(0, 0, 0, 0.25);
   }
 }
 
 .contact__info {
   @include mq("md") {
-    max-width: rem(440);
+    max-width: 48.3%;
     width: 100%;
-    margin-right: rem(82);
+    // padding-left: rem(50);
   }
 }
 
@@ -39,22 +43,24 @@
   text-align: center;
   // border-bottom: 1px solid $green;
   padding-bottom: rem(6);
-  text-align: center;
   margin: 0 auto;
+  @include mq("md") {
+    max-width: rem(200);
+  }
 }
 
 .contact__logo:before {
-  background-color: #408f95;
-  bottom: 0;
-  content: "";
-  height: 1px;
-  position: absolute;
-  width: rem(295);
-  left: 50%;
-  transform: translateX(-50%);
-  @include mq("md") {
-    width: rem(440);
-  }
+  // background-color: #408f95;
+  // bottom: 0;
+  // content: "";
+  // height: 1px;
+  // position: absolute;
+  // width: rem(295);
+  // left: 50%;
+  // transform: translateX(-50%);
+  // @include mq("md") {
+  //   width: rem(440);
+  // }
 }
 
 .contact__logo img {
@@ -69,11 +75,13 @@
   @include mq("md") {
     display: flex;
     margin-top: rem(24);
+    border-top: 1px solid $green;
   }
 }
 .contact__lists-wrap {
   @include mq("md") {
     display: flex;
+    width: 33.18%;
   }
 }
 
@@ -92,8 +100,9 @@
   margin-left: auto;
   margin-right: auto;
   @include mq(md) {
-    max-width: rem(273);
-    margin-top: 0;
+    margin-top: rem(0);
+    max-width: 62%;
+    margin-left: rem(21);
   }
 }
 
@@ -121,15 +130,24 @@
     border-left: 1px solid $green;
     padding-left: rem(81);
     margin-top: 0;
+    max-width: 36.6%;
+    margin-left: rem(82);
   }
 }
 
 .contact__header-title.section-header__title {
   font-size: rem(80);
   font-weight: normal;
+  line-height: 1;
+}
+
+.contact__header-title-sub.section-header__sub {
+  margin-top: rem(-5);
 }
 
 .contact__button-text {
+  font-size: rem(14);
+  line-height: 1.285;
   margin-top: rem(8);
   color: $green;
   text-align: center;

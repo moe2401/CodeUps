@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .layout-blog {
-  margin-top: rem(80);
-  margin-bottom: rem(80);
+  margin-top: rem(84);
   @include mq("md") {
     position: relative;
+    margin-top: rem(0);
   }
 }
