@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
+
     <!-- meta情報 -->
     <title>CodeUps</title>
     <meta name="footer-nav" content="ダイビングショップ" />
@@ -13,11 +14,14 @@
     <meta property="og:title" content=" CodeUps" />
     <meta property="og:type" content="web site" />
     <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta
+      property="og:image"
+      content="http://hogehoge.com/images/ogp-img.jpg"
+    />
     <meta property="og:site_name" content="CodeUps" />
     <meta property="og:footer-nav" content="ダイビングショップ" />
     <!-- ファビコン -->
-    <link rel="”icon”" href="" />
+    <link rel="icon" href="./assets/images/common/coral.png" />
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,12 +32,12 @@
     <!-- css -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/jquery.inview.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
@@ -159,14 +163,6 @@
     </header>
 
     <main>
-      <!-- <div class="loading-animation">
-      <div class="loading__i51.5mg delayScroll">
-        <img src="./assets/images/common/loading-img-left.jpg" class="image" alt="Image 1">
-        <img src="./assets/images/common/loading-img-right.jpg" class="image" alt="Image 2">
-        <img src="./assets/images/common/mv_1-pc.jpg" class="merged-image" alt="Merged Image">
-      </div>
-    </div> -->
-
       <section class="mv mv-layout">
         <div class="mv__inner">
           <div class="mv__swiper js-mv-swiper swiper">
@@ -232,13 +228,13 @@
 
       <section class="campaign campaign-layout">
         <div class="campaign__inner inner">
+          <div class="swiper-button-prev js-campaign-arrow"></div>
+          <div class="swiper-button-next js-campaign-arrow"></div>
           <div class="campaign__header section-header">
             <h2 class="section-header__title"><span>C</span>ampaign</h2>
             <p class="section-header__sub">キャンペーン</p>
           </div>
           <div class="campaign__swiper-wrap campaign-swiper">
-            <div class="swiper-button-prev js-campaign-arrow"></div>
-            <div class="swiper-button-next js-campaign-arrow"></div>
             <div class="campaign__swiper js-campaign-swiper swiper">
               <ul class="swiper-wrapper">
                 <li class="campaign-card swiper-slide">
@@ -552,7 +548,7 @@
                     <div class="voice-card__img">
                       <img
                         src="./assets/images/common/voice-card_1.jpg"
-                        alt="女性お客様の写真"
+                        alt="女性のお客様の写真"
                       />
                     </div>
                   </div>
@@ -605,7 +601,7 @@
         </div>
       </section>
 
-      <section class="price price-layout">
+      <section id="price" class="price price-layout">
         <div class="price__inner inner">
           <div class="price__header section-header">
             <h2 class="section-header__title"><span>P</span>rice</h2>
@@ -749,7 +745,7 @@
                   <span>C</span>ontact
                 </h2>
                 <p class="contact__header-title-sub section-header__sub">
-                  お問合せ
+                  お問い合わせ
                 </p>
                 <p class="contact__button-text">ご予約・お問い合わせはコチラ</p>
               </div>
@@ -850,9 +846,9 @@
           </nav>
         </div>
       </div>
-      <small class="footer__copyright">
-        <p>Copyright © 2021 - 2023 CodeUps LLC. All Rights Reserved.</p>
-      </small>
+      <div class="footer__copyright">
+        <small>Copyright © 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
+      </div>
     </footer>
   </body>
 </html>
