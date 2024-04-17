@@ -5,24 +5,30 @@
   padding: rem(10) 0;
 }
 
+.campaign__inner {
+  position: relative;
+}
+
 .campaign__swiper-wrap {
   margin-top: rem(19);
   margin-right: calc(50% - 50vw);
   width: 100vw;
-  padding: 4px 0;
+  padding: rem(4) 0;
   @include mq("md") {
-    margin-top: rem(-9);
+    margin-top: rem(40);
   }
 }
 
 .campaign__swiper.swiper {
-  padding: 4px 0;
+  padding: rem(4) 0;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  position: relative;
+  position: absolute;
   display: none;
+  width: rem(80);
+  height: rem(80);
   @include mq("md") {
     display: flex;
   }
@@ -31,33 +37,34 @@
 .swiper-button-prev::after,
 .swiper-button-next::after {
   @include mq("md") {
-    position: absolute;
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
-    width: rem(80);
-    height: rem(80);
+    width: 100%;
+    height: 100%;
     margin: auto;
   }
 }
 
-.swiper-button-prev::after {
+.swiper-button-prev {
   @include mq("md") {
-    top: rem(-35);
-    left: rem(991);
+    top: 4%;
+    left: 91%;
   }
 }
 
-.swiper-button-next::after {
+.swiper-button-next {
   @include mq("md") {
-    top: rem(-54);
-    left: rem(850);
+    top: 4%;
+    left: 76.7%;
   }
 }
 
 .swiper-button-prev::after {
   @include mq("md") {
     background-image: url(../images/common/navigation-prev.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 

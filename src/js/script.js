@@ -1,6 +1,5 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-
   // ハンバーガーメニュー
   $(function () {
     $(".js-hamburger").click(function () {
@@ -23,39 +22,39 @@ jQuery(function ($) {
     }
   });
 
-  //スライダー
-  // const mv_swiper = new Swiper(".js-mv-swiper", {
-  //   loop: true,
-  //   effect: "fade",
-  //   speed: 3000,
-  //   allowTouchMove: false,
-  //   autoplay: {
-  //     delay: 3000,
-  //   },
-  // });
+  // スライダー
+  const mv_swiper = new Swiper(".js-mv-swiper", {
+    loop: true,
+    effect: "fade",
+    speed: 3000,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 3000,
+    },
+  });
 
-  //カードスライド
-  // var campaign_swiper = new Swiper(".js-campaign-swiper", {
-  //   loop: true,
-  //   speed: 2000,
-  //   slidesPerView: 1.5,
-  //   spaceBetween: 24,
-  //   autoplay: {
-  //     delay: 2000,
-  //     disableOnInteraction: false,
-  //   },
-  //   breakpoints: {
-  //     768: {
-  //       slidesPerView: 3.5,
-  //       spaceBetween: 40,
-  //     },
-  //   },
+  // カードスライド
+  var campaign_swiper = new Swiper(".js-campaign-swiper", {
+    loop: true,
+    speed: 2000,
+    slidesPerView: "auto",
+    spaceBetween: 24,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+      },
+    },
 
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  // });
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
   //ページトップ
   const pageTop = $(".page-top-button");
@@ -77,7 +76,7 @@ jQuery(function ($) {
     return false;
   });
 
-  フッター手前でストップ;
+  // フッター手前でストップ;
   $(".page-top-button").hide();
   $(window).on("scroll", function () {
     const scrollHeight = $(document).height();
@@ -86,7 +85,7 @@ jQuery(function ($) {
     if (scrollHeight - scrollPosition <= footHeight) {
       $(".page-top-button").css({
         position: "absolute",
-        bottom: footHeight + 50,
+        bottom: footHeight + 20,
       });
     } else {
       $(".page-top-button").css({
@@ -96,27 +95,27 @@ jQuery(function ($) {
     }
   });
 
-  // var speed = 700; // speed変数を定義
-  // $(".information__img, .voice-card__img, .price__img").each(function () {
-  //   $(this).append('<div class="color"></div>');
-  //   var color = $(this).find(".color"),
-  //     image = $(this).find("img");
-  //   var counter = 0;
+  var speed = 700; // speed変数を定義
+  $(".information__img, .voice-card__img, .price__img").each(function () {
+    $(this).append('<div class="color"></div>');
+    var color = $(this).find(".color"),
+      image = $(this).find("img");
+    var counter = 0;
 
-  //   image.css("opacity", "0");
-  //   color.css("width", "0%");
-  //   //inviewを使って背景色が画面に現れたら処理をする
-  //   color.on("inview", function () {
-  //     if (counter == 0) {
-  //       $(this)
-  //         .delay(200)
-  //         .animate({ width: "100%" }, speed, function () {
-  //           image.css("opacity", "1");
-  //           $(this).css({ left: "0", right: "auto" });
-  //           $(this).animate({ width: "0%" }, speed);
-  //         });
-  //       counter = 1;
-  //     }
-  //   });
-  // });
+    image.css("opacity", "0");
+    color.css("width", "0%");
+    //inviewを使って背景色が画面に現れたら処理をする
+    color.on("inview", function () {
+      if (counter == 0) {
+        $(this)
+          .delay(200)
+          .animate({ width: "100%" }, speed, function () {
+            image.css("opacity", "1");
+            $(this).css({ left: "0", right: "auto" });
+            $(this).animate({ width: "0%" }, speed);
+          });
+        counter = 1;
+      }
+    });
+  });
 });

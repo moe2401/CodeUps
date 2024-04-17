@@ -31,7 +31,6 @@
 }
 
 .button::before {
-  //ボタンの周りのボーダー
   position: absolute;
   content: "";
   border: 1px solid $green;
@@ -48,7 +47,6 @@
 }
 
 .button span::after {
-  //矢印画像
   display: inline-block;
   margin-left: rem(8);
   content: "";
@@ -61,12 +59,10 @@
 }
 
 .button:hover {
-  //ホバーしたら文字緑
   color: $green;
 }
 
 .button:hover span::after {
-  //ホバーしたら矢印画像変わる
   content: "";
   background-image: url(../images/common/button-arrow_2.svg);
   width: rem(40);
@@ -77,5 +73,4 @@
 
 .button:hover::after {
   transform: scale(1, 1);
-  // display: inline-block;
 }

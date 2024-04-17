@@ -1,16 +1,10 @@
 @use "global" as *;
 
-.nav-contents {
-  // padding: 0 rem(37);
-}
-
 .nav-contents__wrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  // column-gap: rem(7);
   row-gap: rem(35);
   margin-top: rem(40);
-  // max-width: rem(335);
   width: 100%;
 
   @include mq("md") {
@@ -24,19 +18,28 @@
 .nav-contents__contents {
   color: $white;
   padding-left: rem(18);
+  @include mq("md") {
+    line-height: 1.125;
+  }
 }
 
-// .nav-contents__contents:nth-of-type(2n + 1) {
-//   margin-top: rem(24);
-// }
+.nav-contents__contents:nth-child(2) {
+  @include mq("md") {
+    order: 4;
+  }
+}
+
+.nav-contents__contents:nth-child(4) {
+  @include mq("md") {
+    order: 4;
+  }
+}
 
 .nav-contents__title {
   position: relative;
   font-weight: $bold;
   font-size: rem(16);
   display: flex;
-  // align-items: center;
-  // padding: rem(12) 0;
   margin-left: rem(4);
   @include mq("md") {
     margin-left: 0;
@@ -63,11 +66,13 @@
 .nav-contents__item {
   margin-top: rem(17);
   text-indent: rem(2);
+  @include mq("md") {
+    margin-top: rem(24);
+  }
 }
 
 .nav-contents__item a {
   font-weight: normal;
   font-size: rem(16);
   display: block;
-  // padding: rem(12) 0;
 }

@@ -11,12 +11,10 @@
 }
 
 .footer__wrap {
-  // margin-left: rem(15);
-}
-
-.footer__inner.inner {
   @include mq("md") {
-    // max-width: 1008px;
+    display: flex;
+    gap: rem(42);
+    align-items: flex-end;
   }
 }
 
@@ -35,14 +33,19 @@
 }
 
 .footer__sns {
-  display: flex;
   margin-top: rem(16);
+  display: flex;
+  @include mq("md") {
+  }
 }
 
 .footer__sns-icon {
   display: block;
   max-width: rem(24);
   width: 100%;
+  @include mq("md") {
+    max-width: rem(32);
+  }
 }
 
 .footer__sns-icon + .footer__sns-icon {
@@ -57,15 +60,18 @@
 
 .footer__copyright {
   text-align: center;
-  margin-top: rem(40);
-  display: block;
+  margin-top: rem(27);
+
   @include mq("md") {
     margin-top: rem(80);
   }
 }
 
-.footer__copyright p {
+.footer__copyright small {
   font-size: rem(12);
   font-family: $font-family-en;
   color: $white;
+  @include mq("md") {
+    font-size: rem(14);
+  }
 }

@@ -25,9 +25,9 @@
 
 .voice-card__contents {
   @include mq("md") {
-    max-width: 276px;
+    max-width: rem(276);
     width: 100%;
-    margin-top: 24px;
+    margin-top: rem(24);
   }
 }
 
@@ -65,7 +65,7 @@
   font-weight: $medium;
   font-family: $font-family-jp;
   border-bottom: 1px solid $green;
-  padding-bottom: mt(4);
+  padding-bottom: rem(4);
   @include mq("md") {
     margin-top: rem(8);
     font-size: rem(24);
