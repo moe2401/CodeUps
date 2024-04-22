@@ -63,6 +63,10 @@
   margin-top: rem(35);
 }
 
+.nav-contents__title a:hover {
+  opacity: 0.7;
+}
+
 .nav-contents__item {
   margin-top: rem(17);
   text-indent: rem(2);
@@ -75,4 +79,8 @@
   font-weight: normal;
   font-size: rem(16);
   display: block;
+}
+
+.nav-contents__item a:hover {
+  opacity: 0.7;
 }

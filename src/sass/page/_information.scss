@@ -18,7 +18,7 @@
   width: 100%;
   @include mq("md") {
     position: relative;
-    max-width: rem(540);
+    max-width: 50%;
   }
 }
 
@@ -55,6 +55,7 @@
   @include mq("md") {
     margin-top: 0;
     margin-left: rem(48);
+    max-width: 45.5%;
   }
 }
 

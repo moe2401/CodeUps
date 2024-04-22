@@ -33,7 +33,7 @@ jQuery(function ($) {
     },
   });
 
-  // カードスライド
+  // カードスライド;
   var campaign_swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     speed: 2000,

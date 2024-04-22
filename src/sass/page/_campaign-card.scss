@@ -3,6 +3,9 @@
 .campaign-card {
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
   max-width: rem(280);
+  height: auto;
+  // display: flex;
+  // flex-direction: column;
   @include mq("md") {
     max-width: rem(333);
   }
@@ -37,12 +40,14 @@
 .campaign-card__item-body {
   padding: rem(16) rem(16) rem(20);
   height: 100%;
+  flex-grow: 1;
   @include mq("md") {
     padding: rem(27) rem(16) rem(40) rem(16);
   }
 }
 
 .campaign-card__meta {
+  flex-grow: 1;
   padding-bottom: rem(8);
   border-bottom: 1px solid $green;
 }
@@ -73,6 +78,7 @@
 
 .campaign-card__contents {
   margin-top: rem(9);
+  flex-grow: 1;
   @include mq("md") {
     margin-top: rem(16);
   }
