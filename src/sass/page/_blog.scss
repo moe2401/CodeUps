@@ -34,7 +34,7 @@
     width: rem(437);
     height: rem(201);
     top: rem(25);
-    left: calc(50% - min(50vw, rem(623)));
+    left: calc(50% - min(47vw, rem(623)));
   }
 }
 
@@ -47,6 +47,19 @@
 .blog__header-title span {
   @include mq("md") {
     color: $light-green;
+  }
+}
+
+.blog__header-title-sub {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.blog__items {
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(80);
   }
 }
 

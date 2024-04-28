@@ -10,7 +10,7 @@
     width: rem(301);
     height: rem(138);
     top: rem(-119);
-    left: calc(50% - min(50vw, rem(624)));
+    left: calc(50% - min(47vw, rem(624)));
   }
 }
 .voice::after {
@@ -23,18 +23,14 @@
     width: rem(71);
     height: rem(162);
     bottom: rem(-67);
-    right: calc(50% - min(50vw, rem(540)));
+    right: calc(50% - min(47vw, rem(540)));
   }
 }
 
 .voice__items {
   margin-top: rem(43);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: rem(40);
   @include mq("md") {
     margin-top: rem(28);
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 

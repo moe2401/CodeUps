@@ -1,10 +1,26 @@
 jQuery(function ($) {
-  // この中であればWordpressでも「$」が使用可能になる
-  // ハンバーガーメニュー
+  //この中であればWordpressでも「$」が使用可能になる
+  //ハンバーガーメニュー
   $(function () {
     $(".js-hamburger").click(function () {
       $(this).toggleClass("is-open");
       $(".js-drawer").fadeToggle();
+
+      //drawer開いたらbodyスクロールしない
+      // 現在のbodyタグのoverflowスタイルを確認
+      if ($("body").css("overflow") === "hidden") {
+        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+        $("body").css({
+          height: "",
+          overflow: "",
+        });
+      } else {
+        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+        $("body").css({
+          height: "100%",
+          overflow: "hidden",
+        });
+      }
     });
   });
 
@@ -28,9 +44,9 @@ jQuery(function ($) {
     effect: "fade",
     speed: 3000,
     allowTouchMove: false,
-    autoplay: {
-      delay: 3000,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    // },
   });
 
   // カードスライド;
@@ -39,10 +55,11 @@ jQuery(function ($) {
     speed: 2000,
     slidesPerView: "auto",
     spaceBetween: 24,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       768: {
         slidesPerView: "auto",

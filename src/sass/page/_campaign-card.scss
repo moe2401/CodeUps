@@ -10,9 +10,9 @@
 }
 
 .campaign-card:not(:first-child) {
-  margin-left: rem(24);
+  // margin-left: rem(24);
   @include mq("md") {
-    margin-left: rem(40);
+    // margin-left: rem(40);
   }
 }
 
@@ -37,15 +37,12 @@
 
 .campaign-card__item-body {
   padding: rem(16) rem(16) rem(20);
-  height: 100%;
-  flex-grow: 1;
   @include mq("md") {
-    padding: rem(27) rem(16) rem(40) rem(16);
+    padding: rem(17) rem(16) rem(40) rem(16);
   }
 }
 
 .campaign-card__meta {
-  flex-grow: 1;
   padding-bottom: rem(8);
   border-bottom: 1px solid $green;
 }
@@ -61,8 +58,9 @@
   line-height: 1.8333;
   border: 1px solid $green;
   padding: rem(5.5) rem(11);
+  display: inline-block;
   @include mq("md") {
-    padding: rem(8) rem(15);
+    padding: rem(6.5) rem(15);
   }
 }
 
@@ -72,6 +70,9 @@
   color: $dark-green;
   margin-top: rem(9);
   line-height: 1.5;
+  @include mq("md") {
+    margin-top: rem(2);
+  }
 }
 
 .campaign-card__contents {

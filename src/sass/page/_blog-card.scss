@@ -1,12 +1,12 @@
 @use "global" as *;
 
 .blog-card {
-  margin-top: rem(30);
+  // margin-top: rem(30);
   display: grid;
   gap: rem(38);
   @include mq("md") {
     grid-template-columns: repeat(3, 1fr);
-    margin-top: rem(80);
+    // margin-top: rem(80);
   }
 }
 

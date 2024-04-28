@@ -1,5 +1,15 @@
 @use "global" as *;
 
+.voice-card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(40);
+  @include mq("md") {
+    // margin-top: rem(28);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .voice-card__item {
   padding: rem(10) rem(16) rem(24);
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
