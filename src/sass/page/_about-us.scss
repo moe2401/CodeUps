@@ -67,9 +67,9 @@
 .about-us__img-left {
   width: 37.101%;
   position: absolute;
-  top: rem(-20);
+  top: -13.4%;
   @include mq("md") {
-    top: rem(-80);
+    top: -20%;
   }
 }
 

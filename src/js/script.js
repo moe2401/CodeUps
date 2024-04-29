@@ -39,14 +39,14 @@ jQuery(function ($) {
   });
 
   // スライダー
-  const mv_swiper = new Swiper(".js-mv-swiper", {
+  var mv_swiper = new Swiper(".js-mv-swiper", {
     loop: true,
     effect: "fade",
     speed: 3000,
     allowTouchMove: false,
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
   });
 
   // カードスライド;
@@ -56,10 +56,10 @@ jQuery(function ($) {
     slidesPerView: "auto",
     spaceBetween: 24,
 
-    // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       768: {
         slidesPerView: "auto",

@@ -2,7 +2,7 @@
 
 .campaign {
   overflow-x: hidden;
-  padding: rem(10) 0;
+  scrollbar-width: none;
 }
 
 .campaign__inner {
@@ -13,14 +13,13 @@
   margin-top: rem(19);
   margin-right: calc(50% - 50vw);
   width: 100vw;
-  padding: rem(4) 0;
   @include mq("md") {
     margin-top: rem(40);
   }
 }
 
-.campaign__swiper.swiper {
-  padding: rem(4) 0;
+.campaign__swiper-wrapper {
+  padding: rem(4);
 }
 
 .swiper-button-prev,

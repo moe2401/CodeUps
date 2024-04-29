@@ -22,7 +22,7 @@
   @include mq("md") {
     display: flex;
     align-items: center;
-    padding: rem(80) rem(48) rem(80) rem(50);
+    padding: rem(80) rem(48);
     box-shadow: rem(4) rem(4) rem(10) rgba(0, 0, 0, 0.25);
   }
 }
@@ -119,9 +119,10 @@
   margin-top: rem(40);
   @include mq("md") {
     border-left: 1px solid $green;
-    padding-left: rem(83);
-    margin-top: 0;
+    padding: rem(20) rem(0) rem(19);
     max-width: 47.03%;
+    width: 100%;
+    margin-top: rem(0);
     margin-left: rem(82);
   }
 }
