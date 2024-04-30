@@ -4,6 +4,7 @@ jQuery(function ($) {
   $(function () {
     $(".js-hamburger").click(function () {
       $(this).toggleClass("is-open");
+      $(".js-header").toggleClass("is-active");
       $(".js-drawer").fadeToggle();
 
       //drawer開いたらbodyスクロールしない
@@ -52,14 +53,16 @@ jQuery(function ($) {
   // カードスライド;
   var campaign_swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
-    speed: 2000,
-    slidesPerView: "auto",
     spaceBetween: 24,
+    slidesPerView: "auto",
+    speed: 3000,
+    loopAdditionalSlides: 1,
 
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
     },
+
     breakpoints: {
       768: {
         slidesPerView: "auto",
