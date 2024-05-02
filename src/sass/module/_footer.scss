@@ -58,6 +58,13 @@
   object-fit: contain;
 }
 
+.footer__nav {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(24);
+  }
+}
+
 .footer__copyright {
   text-align: center;
   margin-top: rem(27);
