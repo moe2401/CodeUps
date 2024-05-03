@@ -25,13 +25,13 @@
 .mv__title-wrap {
   position: absolute;
   top: 50%;
-  left: 52.8%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
   text-align: center;
   @include mq("md") {
     top: 50%;
-    left: 51.5%;
+    left: 50%;
   }
 }
 
@@ -40,7 +40,7 @@
   font-size: rem(40);
   font-weight: normal;
   letter-spacing: 0.54em;
-  text-indent: 0.1em;
+  text-indent: 0.54em;
   color: $white;
   @include mq("md") {
     font-size: rem(80);

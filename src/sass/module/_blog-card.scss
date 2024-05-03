@@ -1,30 +1,22 @@
 @use "global" as *;
 
 .blog-card {
-  display: grid;
-  gap: rem(38);
-  @include mq("md") {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.blog-card__item {
   width: 100%;
-  margin: 0 auto;
+  // margin: 0 auto;
   background-color: $white;
   @include mq("md") {
     max-width: rem(333);
   }
 }
 
-.blog-card__item a {
+.blog-card a {
   padding: rem(16) rem(16) rem(24) rem(16);
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
   height: 100%;
   display: block;
 }
 
-.blog-card__item a:hover {
+.blog-card a:hover {
   opacity: 0.7;
 }
 

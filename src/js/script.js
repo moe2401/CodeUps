@@ -35,6 +35,7 @@ jQuery(function ($) {
   $(window).on("resize", function () {
     if (window.matchMedia("(min-width: 768px)").matches) {
       $(".js-hamburger").removeClass("is-open");
+      $(".js-header").removeClass("is-active");
       $(".js-drawer").fadeOut();
     }
   });
@@ -58,10 +59,10 @@ jQuery(function ($) {
     speed: 3000,
     loopAdditionalSlides: 1,
 
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
 
     breakpoints: {
       768: {
