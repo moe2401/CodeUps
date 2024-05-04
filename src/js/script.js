@@ -54,21 +54,25 @@ jQuery(function ($) {
   // カードスライド;
   var campaign_swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
-    spaceBetween: 24,
     slidesPerView: "auto",
-    speed: 3000,
-    loopAdditionalSlides: 1,
-
-    // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: false,
-    // },
+    spaceBetween: 24,
+    speed: 2000,
 
     breakpoints: {
       768: {
         slidesPerView: "auto",
         spaceBetween: 40,
       },
+      2000: {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+        width: 333,
+      },
+    },
+
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
     },
 
     navigation: {
@@ -77,6 +81,13 @@ jQuery(function ($) {
     },
   });
 
+  // var campaign_swiper = new Swiper(".js-campaign-swiper", {
+  //   loop: true,
+  //   slidesPerView: 1,
+  //   autoplay: {
+  //     delay: 3000,
+  //   },
+  // });
   //ページトップ
   const pageTop = $(".page-top-button");
   pageTop.hide();
