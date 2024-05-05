@@ -57,7 +57,6 @@ jQuery(function ($) {
     slidesPerView: "auto",
     spaceBetween: 24,
     speed: 2000,
-    // width: 280,
 
     breakpoints: {
       768: {
@@ -65,11 +64,6 @@ jQuery(function ($) {
         spaceBetween: 40,
         width: 333,
       },
-      // 2000: {
-      //   // slidesPerView: "auto",
-      //   spaceBetween: 40,
-      //   // width: 333,
-      // },
     },
 
     autoplay: {
@@ -83,13 +77,6 @@ jQuery(function ($) {
     },
   });
 
-  // var campaign_swiper = new Swiper(".js-campaign-swiper", {
-  //   loop: true,
-  //   slidesPerView: 1,
-  //   autoplay: {
-  //     delay: 3000,
-  //   },
-  // });
   //ページトップ
   const pageTop = $(".page-top-button");
   pageTop.hide();
