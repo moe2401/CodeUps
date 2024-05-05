@@ -57,17 +57,19 @@ jQuery(function ($) {
     slidesPerView: "auto",
     spaceBetween: 24,
     speed: 2000,
+    // width: 280,
 
     breakpoints: {
       768: {
         slidesPerView: "auto",
         spaceBetween: 40,
-      },
-      2000: {
-        slidesPerView: "auto",
-        spaceBetween: 40,
         width: 333,
       },
+      // 2000: {
+      //   // slidesPerView: "auto",
+      //   spaceBetween: 40,
+      //   // width: 333,
+      // },
     },
 
     autoplay: {
