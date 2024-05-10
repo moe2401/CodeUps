@@ -37,12 +37,42 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/jquery.inview.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
+    <!-- loafing animation -->
+    <section class="loading js-loading">
+      <div class="loading__title-wrap">
+        <h2 class="loading__title title title--green">DIVING</h2>
+        <p class="loading__title-sub title__sub title__sub--green">
+          into the ocean
+        </p>
+      </div>
+
+      <div class="loading__img-wrap">
+        <div class="loading__slideIn-left">
+          <img
+            src="./assets/images/common/loading-img-left.jpg"
+            alt="海亀が泳いでいる様子の左側"
+          />
+        </div>
+        <div class="loading__slideIn-right">
+          <img
+            src="/assets/images/common/loading-img-right.jpg"
+            alt="海亀が泳いでいる様子の右側"
+          />
+        </div>
+      </div>
+
+      <div class="loading__title-wrap slide">
+        <h2 class="loading__title title">DIVING</h2>
+        <p class="loading__title-sub title__sub">into the ocean</p>
+      </div>
+    </section>
+
     <!-- ページトップボタン -->
     <div class="page-top-button js-page-top">
       <img
@@ -221,8 +251,8 @@
             </div>
           </div>
           <div class="mv__title-wrap">
-            <h2 class="mv__title">DIVING</h2>
-            <p class="mv__title-sub">into the ocean</p>
+            <h2 class="mv__title title">DIVING</h2>
+            <p class="mv__title-sub title__sub">into the ocean</p>
           </div>
         </div>
       </section>

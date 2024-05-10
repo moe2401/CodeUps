@@ -35,20 +35,28 @@
   }
 }
 
-.mv__title {
-  font-family: $font-family-en2;
-  font-size: rem(40);
-  font-weight: normal;
-  letter-spacing: 0.54em;
-  text-indent: 0.54em;
-  color: $white;
-  @include mq("md") {
-    font-size: rem(80);
-  }
-}
+// .mv__title {
+//   font-family: $font-family-en2;
+//   font-size: rem(40);
+//   font-weight: normal;
+//   letter-spacing: 0.54em;
+//   text-indent: 0.54em;
+//   color: $white;
+//   @include mq("md") {
+//     font-size: rem(80);
+//   }
+// }
 
-.mv__title-sub {
-  font-size: rem(20);
-  font-family: $font-family-en;
-  color: $white;
-}
+// .mv__title-sub {
+//   font-size: rem(20);
+//   font-family: $font-family-en;
+//   color: $white;
+// }
+
+// .mv__title--green {
+//   color: $green;
+// }
+
+// .mv__title-sub--green {
+//   color: $green;
+// }

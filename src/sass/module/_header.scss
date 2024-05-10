@@ -7,7 +7,7 @@
   right: 0;
   height: rem(80);
   background-color: rgba($color: #0d2936, $alpha: 0.68);
-  z-index: 900;
+  z-index: 500;
   @include mq("md") {
     height: rem(90);
   }
