@@ -1,18 +1,16 @@
 @use "global" as *;
 
 .voice-card {
-  padding: rem(10) rem(16) rem(24);
-  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
-  @include mq("md") {
-    padding: rem(25);
-  }
+  background-color: $white;
+  height: 100%;
 }
 
-.voice-card__item a {
+.voice-card__body {
+  padding: rem(10) rem(16) rem(24);
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
   height: 100%;
-  display: block;
-  background-color: $white;
   @include mq("md") {
+    padding: rem(25);
   }
 }
 

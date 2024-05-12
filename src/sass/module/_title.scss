@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.title {
+.title__main {
   font-family: $font-family-en2;
   font-size: rem(40);
   font-weight: normal;
@@ -18,7 +18,7 @@
   color: $white;
 }
 
-.title.title--green {
+.title__main.title__main--green {
   color: $green;
 }
 

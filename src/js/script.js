@@ -1,29 +1,4 @@
 jQuery(function ($) {
-  // ローディング画面
-  // document.addEventListener("window.onload", function () {
-  //   const loadingElement = document.querySelector(".js-loading");
-  //   // 初回訪問時にのみローディング要素を表示する
-  //   if (!localStorage.getItem("visited")) {
-  //     if (loadingElement) {
-  //       loadingElement.style.display = "block"; // 表示状態に変更
-  //       // アニメーションを開始
-  //       loadingElement.classList.add("is-loaded");
-  //     }
-  //   }
-  // });
-
-  // window.addEventListener("load", function () {
-  //   const loadingElement = document.querySelector(".js-loading");
-  //   if (loadingElement && loadingElement.style.display !== "none") {
-  //     // 初回訪問時のみ処理を行う
-  //     localStorage.setItem("visited", "true");
-  //     // アニメーション終了後に非表示にする
-  //     setTimeout(function () {
-  //       loadingElement.style.display = "none"; // 最終的に非表示にする
-  //     }, 6000); // アニメーションの遅延時間を含めた後に非表示
-  //   }
-  // });
-
   //ハンバーガーメニュー
   $(function () {
     $(".js-hamburger").click(function () {
@@ -91,7 +66,7 @@ jQuery(function ($) {
     },
 
     autoplay: {
-      delay: 2000,
+      delay: 1000,
       disableOnInteraction: false,
     },
 

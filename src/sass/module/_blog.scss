@@ -38,24 +38,6 @@
   }
 }
 
-.blog__header-title {
-  @include mq("md") {
-    color: $white;
-  }
-}
-
-.blog__header-title span {
-  @include mq("md") {
-    color: $light-green;
-  }
-}
-
-.blog__header-title-sub {
-  @include mq("md") {
-    color: $white;
-  }
-}
-
 .blog__items {
   margin-top: rem(30);
   @include mq("md") {

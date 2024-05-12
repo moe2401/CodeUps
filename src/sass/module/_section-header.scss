@@ -12,20 +12,29 @@
   }
 }
 
+.section-header__title::first-letter {
+  color: $green;
+}
+
 .section-header__title--white {
-  color: $white;
+  @include mq("md") {
+    color: $white;
+  }
 }
 
-.section-header__title span {
-  color: $green;
+.section-header__title--white::first-letter {
+  @include mq("md") {
+    color: $light-green;
+  }
 }
 
-.section-header__title span {
-  color: $green;
-}
-
-.section-header__title--white span {
-  color: #ddf0f1;
+.section-header__title--contact {
+  font-size: rem(80);
+  font-weight: normal;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(80);
+  }
 }
 
 .section-header__sub {
@@ -35,7 +44,18 @@
   line-height: 1.5;
   text-align: center;
   margin-top: rem(8);
+  font-weight: normal;
   @include mq("md") {
     margin-top: rem(8);
   }
+}
+
+.section-header__sub--white {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.section-header__sub--contact {
+  margin-top: rem(-5);
 }

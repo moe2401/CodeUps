@@ -16,13 +16,6 @@
   }
 }
 
-// .js-loading.is-loaded {
-//   animation: fadeOut 1s ease-in-out forwards;
-//   animation-delay: 4s;
-//   opacity: 0;
-//   visibility: hidden;
-// }
-
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -30,6 +23,7 @@
 
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -151,22 +145,5 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-.slide {
-  @include mq("md") {
-    animation: text-focus-in 3s forwards;
-    animation-delay: 2s;
-    opacity: 0;
-  }
-}
-
-@keyframes text-focus-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }

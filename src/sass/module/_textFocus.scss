@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.textFocus {
+  @include mq("md") {
+    animation: text-focus-in 3s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
