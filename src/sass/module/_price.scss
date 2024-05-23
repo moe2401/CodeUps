@@ -124,6 +124,9 @@
   flex-shrink: 0;
   text-align: right;
   margin-left: rem(4);
+  @include mq("md") {
+    margin-left: rem(10);
+  }
 }
 
 .price__contents {

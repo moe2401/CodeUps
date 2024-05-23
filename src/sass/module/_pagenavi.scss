@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.pagenavi {
+  text-align: center;
+}
+
+.pagenavi a {
+  width: rem(38);
+  height: rem(38);
+  background-color: $white;
+  color: $green;
+  border: 1px solid $green;
+  display: inline-block;
+}

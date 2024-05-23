@@ -76,7 +76,7 @@ jQuery(function ($) {
     },
   });
 
-  //ページトップ
+  //ページトップに戻るボタン
   const pageTop = $(".page-top-button");
   pageTop.hide();
   $(window).scroll(function () {

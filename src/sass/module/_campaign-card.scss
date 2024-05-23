@@ -13,6 +13,12 @@
   }
 }
 
+.campaign-card--large {
+  @include mq("md") {
+    max-width: 100%;
+  }
+}
+
 .campaign-card__img {
   width: 100%;
 }
@@ -67,6 +73,12 @@
   line-height: 1.5;
   @include mq("md") {
     margin-top: rem(2);
+  }
+}
+
+.campaign-card__category--large {
+  @include mq("md") {
+    font-size: rem(24);
   }
 }
 
@@ -128,4 +140,27 @@
     font-size: rem(40);
     margin-left: rem(25);
   }
+}
+
+.campaign-card__text-box {
+  margin-top: rem(24);
+}
+
+.campaign-card__text {
+  font-size: rem(16);
+  font-family: $font-family-jp;
+  color: $dark-green;
+}
+
+.campaign-card__wrap {
+  margin-top: rem(32);
+}
+
+.campaign-card__date {
+  font-size: rem(16);
+  font-weight: bold;
+  color: $green;
+  font-family: $font-family-en2;
+  text-align: center;
+  display: block;
 }
