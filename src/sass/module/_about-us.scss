@@ -1,25 +1,5 @@
 @use "global" as *;
 
-.about-us {
-  @include mq("md") {
-  }
-}
-
-.about-us::before {
-  @include mq("md") {
-    position: absolute;
-    content: "";
-    background-image: url(../images/common/coral.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: rem(194);
-    height: rem(181);
-    bottom: rem(-90);
-    right: calc(50% - min(48vw, rem(638)));
-    z-index: 1;
-  }
-}
-
 .about-us__title {
   font-family: $font-family-en;
   font-size: rem(40);
@@ -31,6 +11,18 @@
     margin-top: 0;
     width: 100%;
     color: $white;
+  }
+}
+
+.about-us__title.about-us__title--white {
+  color: $white;
+  position: absolute;
+  top: rem(22);
+  left: rem(23);
+  @include mq("md") {
+    position: relative;
+    top: rem(0);
+    left: rem(0);
   }
 }
 
@@ -60,6 +52,10 @@
   }
 }
 
+.about-us__text.about-us__text--margin {
+  margin-top: rem(40);
+}
+
 .about-us__img-wrap {
   position: relative;
 }
@@ -73,6 +69,13 @@
   }
 }
 
+.about-us__img-left.about-us__img-left--noShow {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
+
 .about-us__img-left img {
   width: 100%;
   object-fit: cover;
@@ -80,12 +83,16 @@
 }
 
 .about-us__img-right {
-  // position: absolute;
   margin-left: auto;
   width: 81.449%;
-  // top: 12.264%;
-  // left: 18.55%;
-  // z-index: -1;
+}
+
+.about-us__img-right.about-us__img-right--subPage {
+  width: 100%;
+  @include mq("md") {
+    margin-right: 0;
+    width: 81.449%;
+  }
 }
 
 .about-us__img-right img {
@@ -105,6 +112,13 @@
     top: 57%;
     left: 55.8%;
     transform: translate(-50%, -50%);
+  }
+}
+
+.about-us__contents.about-us__contents--sub {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(0);
   }
 }
 

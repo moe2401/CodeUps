@@ -7,3 +7,18 @@
     position: relative;
   }
 }
+
+.layout-about-us::before {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    background-image: url(../images/common/coral.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: rem(194);
+    height: rem(181);
+    bottom: rem(-90);
+    right: calc(50% - min(48vw, rem(638)));
+    z-index: 1;
+  }
+}

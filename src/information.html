@@ -65,15 +65,13 @@
         <nav class="header__nav">
           <ul class="header__nav-items">
             <li class="header__nav-item">
-              <a href="#">Campaign<span>キャンペーン</span></a>
+              <a href="./campaign.html">Campaign<span>キャンペーン</span></a>
             </li>
             <li class="header__nav-item">
               <a href="./about-us.html">About us<span>私たちについて</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="./information.html"
-                >Information<span>ダイビング情報</span></a
-              >
+              <a href="#">Information<span>ダイビング情報</span></a>
             </li>
             <li class="header__nav-item">
               <a href="#">Blog<span>ブログ</span></a>
@@ -105,7 +103,7 @@
               <ul class="nav-contents__contents">
                 <li class="nav-contents__group">
                   <div class="nav-contents__title">
-                    <a href="#">キャンペーン</a>
+                    <a href="./campaign.html">キャンペーン</a>
                   </div>
                   <div>
                     <ul class="nav-contents__items">
@@ -151,7 +149,7 @@
               <ul class="nav-contents__contents">
                 <li class="nav-contents__group">
                   <div class="nav-contents__title">
-                    <a href="./information.html">ダイビング情報</a>
+                    <a href="">ダイビング情報</a>
                   </div>
                   <div>
                     <ul class="nav-contents__items">
@@ -200,22 +198,22 @@
           <picture class="sub-mv__img">
             <source
               media="(max-width: 768px)"
-              srcset="./assets/images/sub/sub-campaign-sp-img.jpg"
+              srcset="./assets/images/sub/sub-info-sp-img.jpg"
             />
             <img
-              src="./assets/images/sub/sub-campaign-pc-img.jpg"
+              src="./assets/images/sub/sub-info-pc-img.jpg"
               alt="2匹の黄色い魚が泳いでいる様子"
             />
           </picture>
         </div>
         <div class="sub-mv__title-wrap sub-page-title">
-          <h2 class="sub-page-title__main">campaign</h2>
+          <h2 class="sub-page-title__main">information</h2>
         </div>
       </section>
 
-      <div class="sub-campaign layout-sub-campaign">
-        <div class="sub-campaign__inner inner">
-          <div class="sub-campaign__breadcrumb breadcrumb">
+      <section class="sub-information layout-sub-information">
+        <div class="sub-information__inner inner">
+          <div class="sub-information__breadcrumb breadcrumb">
             <div class="breadcrumb__inner">
               <!-- Breadcrumb NavXTで出力される部分 ここから -->
               <span>
@@ -225,245 +223,143 @@
               </span>
               &nbsp;&gt;&nbsp;
               <span>
-                <span class="breadcrumb__current-item">キャンペーン</span>
+                <span class="breadcrumb__current-item">ダイビング情報</span>
               </span>
               <!-- Breadcrumb NavXTで出力される部分 ここまで -->
             </div>
           </div>
 
-          <div class="sub-campaign__tab tab">
-            <ul class="tab__menu">
-              <li class="tab__menu-item">ALL</li>
-              <li class="tab__menu-item">ライセンス講習</li>
-              <li class="tab__menu-item">ファンダイビング</li>
-              <li class="tab__menu-item">体験ダイビング</li>
-            </ul>
-          </div>
-
-          <div class="sub-campaign__content">
-            <ul class="sub-campaign__cards">
-              <li class="sub-campaign__item">
-                <div class="campaign-card campaign-card--large">
-                  <div class="campaign-card__img">
+          <div class="sub-information__contents">
+            <div class="sub-information__tab tab-info">
+              <ul class="tab-info__menu">
+                <li
+                  class="tab-info__menu-item js-tab-info-menu is-tab"
+                  data-number="tab01"
+                  data-image-default="./assets/images/sub/whale-white.png"
+                  data-image-active="./assets/images/sub/whale-green.png"
+                >
+                  <div class="tab-info__img u-desktop">
                     <img
-                      src="./assets/images/common/campaign_1.jpg"
-                      alt="海の中を色鮮やかなたくさんの魚が泳いでいる様子"
+                      src="./assets/images/sub/whale-green.png"
+                      alt="鯨のアイコン"
                     />
                   </div>
-                  <div class="campaign-card__item-body">
-                    <div class="campaign-card__meta">
-                      <span class="campaign-card__tag">ライセンス講習</span>
-                      <p
-                        class="campaign-card__category campaign-card__category--large"
-                      >
-                        ライセンス取得
-                      </p>
-                    </div>
-                    <div class="campaign-card__contents">
-                      <p class="campaign-card__title">全部コミコミ(お一人様)</p>
-                      <div class="campaign-card__price-body">
-                        <span class="campaign-card__price">¥56,000</span>
-                        <span class="campaign-card__price-discount"
-                          >¥46,000</span
-                        >
-                      </div>
-                      <div class="campaign-card__text-box u-desktop">
-                        <p class="campaign-card__text">
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                        <div class="campaign-card__wrap">
-                          <time
-                            class="campaign-card__date"
-                            datetime="2023-06-01/2023-09-30"
-                            >2023/6/1-9/30</time
-                          >
-                          <p class="contact__button-text">
-                            ご予約・お問い合わせはコチラ
-                          </p>
-                          <div class="contact__button contact__button--margin">
-                            <a href="#" class="button">
-                              <span>Contact us</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
+                  <span>ライセンス<br class="u-mobile" />講習</span>
+                </li>
 
-              <li class="sub-campaign__item">
-                <div class="campaign-card campaign-card--large">
-                  <div class="campaign-card__img">
+                <li
+                  class="tab-info__menu-item js-tab-info-menu"
+                  data-number="tab02"
+                  data-image-default="./assets/images/sub/whale-white.png"
+                  data-image-active="./assets/images/sub/whale-green.png"
+                >
+                  <div class="tab-info__img u-desktop">
                     <img
-                      src="./assets/images/common/campaign_2.jpg"
-                      alt="透明感のある海と停まっている船の様子"
+                      src="./assets/images/sub/whale-green.png"
+                      alt="鯨のアイコン"
                     />
                   </div>
-                  <div class="campaign-card__item-body">
-                    <div class="campaign-card__meta">
-                      <span class="campaign-card__tag">体験ダイビング</span>
-                      <p
-                        class="campaign-card__category campaign-card__category--large"
-                      >
-                        貸切体験ダイビング
-                      </p>
-                    </div>
-                    <div class="campaign-card__contents">
-                      <p class="campaign-card__title">全部コミコミ(お一人様)</p>
-                      <div class="campaign-card__price-body">
-                        <span class="campaign-card__price">¥24,000</span>
-                        <span class="campaign-card__price-discount"
-                          >¥18,000</span
-                        >
-                      </div>
-                      <div class="campaign-card__text-box u-desktop">
-                        <p class="campaign-card__text">
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                        <div class="campaign-card__wrap">
-                          <time
-                            class="campaign-card__date"
-                            datetime="2023-06-01/2023-09-30"
-                            >2023/6/1-9/30</time
-                          >
-                          <p class="contact__button-text">
-                            ご予約・お問い合わせはコチラ
-                          </p>
-                          <div class="contact__button contact__button--margin">
-                            <a href="#" class="button">
-                              <span>Contact us</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
+                  <span>ファン<br class="u-mobile" />ダイビング</span>
+                </li>
 
-              <li class="sub-campaign__item">
-                <div class="campaign-card campaign-card--large">
-                  <div class="campaign-card__img">
+                <li
+                  class="tab-info__menu-item js-tab-info-menu"
+                  data-number="tab03"
+                  data-image-default="./assets/images/sub/whale-white.png"
+                  data-image-active="./assets/images/sub/whale-green.png"
+                >
+                  <div class="tab-info__img u-desktop">
                     <img
-                      src="./assets/images/common/campaign_3.jpg"
-                      alt="夜の海をたくさんのクラゲが泳いでいる様子"
+                      src="./assets/images/sub/whale-green.png"
+                      alt="鯨のアイコン"
                     />
                   </div>
-                  <div class="campaign-card__item-body">
-                    <div class="campaign-card__meta">
-                      <span class="campaign-card__tag">体験ダイビング</span>
-                      <p
-                        class="campaign-card__category campaign-card__category--large"
-                      >
-                        ナイトダイビング
-                      </p>
-                    </div>
-                    <div class="campaign-card__contents">
-                      <p class="campaign-card__title">全部コミコミ(お一人様)</p>
-                      <div class="campaign-card__price-body">
-                        <span class="campaign-card__price">¥10,000</span>
-                        <span class="campaign-card__price-discount"
-                          >¥8,000</span
-                        >
-                      </div>
-                      <div class="campaign-card__text-box u-desktop">
-                        <p class="campaign-card__text">
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                        <div class="campaign-card__wrap">
-                          <time
-                            class="campaign-card__date"
-                            datetime="2023-06-01/2023-09-30"
-                            >2023/6/1-9/30</time
-                          >
-                          <p class="contact__button-text">
-                            ご予約・お問い合わせはコチラ
-                          </p>
-                          <div class="contact__button contact__button--margin">
-                            <a href="#" class="button">
-                              <span>Contact us</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
+                  <span>体験<br class="u-mobile" />ダイビング</span>
+                </li>
+              </ul>
 
-              <li class="sub-campaign__item">
-                <div class="campaign-card campaign-card--large">
-                  <div class="campaign-card__img">
-                    <img
-                      src="./assets/images/common/campaign_4.jpg"
-                      alt="ダイビングをしている4人の人が海面に顔を出し話している様子"
-                    />
-                  </div>
-                  <div class="campaign-card__item-body">
-                    <div class="campaign-card__meta">
-                      <span class="campaign-card__tag">ファンダイビング</span>
-                      <p
-                        class="campaign-card__category campaign-card__category--large"
-                      >
-                        貸切ファンダイビング
-                      </p>
-                    </div>
-                    <div class="campaign-card__contents">
-                      <p class="campaign-card__title">全部コミコミ(お一人様)</p>
-                      <div class="campaign-card__price-body">
-                        <span class="campaign-card__price">¥20,000</span>
-                        <span class="campaign-card__price-discount"
-                          >¥16,000</span
-                        >
-                      </div>
-                      <div class="campaign-card__text-box u-desktop">
-                        <p class="campaign-card__text">
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                        <div class="campaign-card__wrap">
-                          <time
-                            class="campaign-card__date"
-                            datetime="2023-06-01/2023-09-30"
-                            >2023/6/1-9/30</time
-                          >
-                          <p class="contact__button-text">
-                            ご予約・お問い合わせはコチラ
-                          </p>
-                          <div class="contact__button contact__button--margin">
-                            <a href="#" class="button">
-                              <span>Contact us</span>
-                            </a>
-                          </div>
+              <ul class="tab-info__content">
+                <li
+                  id="tab01"
+                  class="tab-info__content-item js-tab-info-content is-tab"
+                >
+                  <a href="#" class="info-card">
+                    <div class="info-card__body">
+                      <div class="info-card__content">
+                        <div class="info-card__meta">
+                          <p class="info-card__category">ライセンス講習</p>
                         </div>
+                        <p class="info-card__text">
+                          泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！
+                        </p>
+                      </div>
+
+                      <div class="info-card__img">
+                        <img
+                          src="./assets/images/sub/license.jpg"
+                          alt="5人おダイバーが海に浮かんでいる様子"
+                        />
                       </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+                  </a>
+                </li>
 
-          <div class="sub-campaign__pagenavi pagenavi">
-            <div class="pagenavi__inner">
-              <!-- WP-PageNaviで出力される部分 ここから -->
-              <div class="wp-pagenavi" role="navigation">
-                <a class="previouspostslink" rel="prev" href="#">&lt;</a>
-                <span class="current">1</span>
-                <a class="page larger" href="#">2</a>
-                <a class="page larger" href="#">3</a>
-                <a class="page larger" href="#">4</a>
-                <a class="page larger u-desktop" href="#">5</a>
-                <a class="page larger u-desktop" href="#">6</a>
-                <a class="nextpostslink" rel="next" href="#">&gt;</a>
-              </div>
-              <!-- WP-PageNaviで出力される部分 ここまで -->
+                <li
+                  id="tab02"
+                  class="tab-info__content-item js-tab-info-content"
+                >
+                  <a href="#" class="info-card">
+                    <div class="info-card__body">
+                      <div class="info-card__content">
+                        <div class="info-card__meta">
+                          <p class="info-card__category">ファンダイビング</p>
+                        </div>
+                        <p class="info-card__text">
+                          ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+                        </p>
+                      </div>
+
+                      <div class="info-card__img">
+                        <img
+                          src="./assets/images/sub/fundiving.jpg"
+                          alt="5人おダイバーが海に浮かんでいる様子"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li
+                  id="tab03"
+                  class="tab-info__content-item js-tab-info-content"
+                >
+                  <a href="#" class="info-card">
+                    <div class="info-card__body">
+                      <div class="info-card__content">
+                        <div class="info-card__meta">
+                          <p class="info-card__category">体験ダイビング</p>
+                        </div>
+                        <p class="info-card__text">
+                          ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+                        </p>
+                      </div>
+
+                      <div class="info-card__img">
+                        <img
+                          src="./assets/images/sub/sub-aboutus_3.jpg"
+                          alt="5人おダイバーが海に浮かんでいる様子"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section class="contact layout-contact">
+      <section class="contact layout-contact layout-contact--aboutus">
         <div class="contact__inner inner">
           <div class="contact__wrap">
             <div class="contact__info">
@@ -519,7 +415,7 @@
       </section>
     </main>
 
-    <footer class="footer layout-footer">
+    <footer class="footer layout-footer layout-footer--info">
       <div class="footer__inner inner">
         <div class="footer__wrap">
           <div class="footer__logo">
@@ -560,7 +456,7 @@
                   </ul>
                 </div>
                 <div class="nav-contents__title">
-                  <a href="./about-us.html">私たちについて</a>
+                  <a href="#">私たちについて</a>
                 </div>
               </li>
             </ul>
@@ -590,7 +486,7 @@
             <ul class="nav-contents__contents">
               <li class="nav-contents__group">
                 <div class="nav-contents__title">
-                  <a href="./information.html">ダイビング情報</a>
+                  <a href="">ダイビング情報</a>
                 </div>
                 <div>
                   <ul class="nav-contents__items">

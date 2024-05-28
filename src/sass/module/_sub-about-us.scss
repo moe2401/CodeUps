@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.sub-about-us__wrapper {
+  position: relative;
+  margin-top: rem(52);
+  @include mq("md") {
+    margin-top: rem(222);
+  }
+}
+
+.sub-about-us__gallery {
+  position: relative;
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(120);
+  }
+}

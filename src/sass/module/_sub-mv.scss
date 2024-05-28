@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.sub-mv {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  height: rem(460);
+  @include mq("md") {
+    height: rem(548);
+  }
+}
+
+.sub-mv__inner,
+.sub-mv__img,
+.sub-mv__img img {
+  height: inherit;
+}
+
+.sub-mv img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sub-mv__title-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  @include mq("md") {
+    top: 59%;
+    left: 50%;
+  }
+}

@@ -5,8 +5,8 @@
   font-size: rem(40);
   font-weight: normal;
   color: $white;
-  text-transform: capitalize;
   line-height: 1;
+  text-transform: capitalize;
   @include mq("md") {
     font-size: rem(80);
   }
