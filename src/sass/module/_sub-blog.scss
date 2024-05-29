@@ -1,0 +1,105 @@
+@use "global" as *;
+
+.sub-blog__pagenavi {
+  margin-top: rem(80);
+}
+
+.sub-blog__content {
+  margin-top: rem(48);
+  @include mq("md") {
+    margin-top: rem(150);
+    display: flex;
+  }
+}
+
+.sub-blog__main {
+  @include mq("md") {
+    width: 65.3%;
+  }
+}
+
+.sub-blog__aside {
+  margin-top: rem(80);
+  @include mq("md") {
+    width: 27.2%;
+    margin-top: rem(0);
+    margin-left: rem(80);
+  }
+}
+
+.sub-blog__aside-inner {
+  max-width: rem(294);
+  margin: auto;
+}
+
+.sub-blog__head {
+  display: flex;
+  align-items: center;
+}
+
+.sub-blog__head::before {
+  content: "";
+  background-color: $green;
+  width: rem(8);
+  height: rem(50);
+  margin-right: rem(16); /* 間隔を調整 */
+}
+
+.sub-blog__head span {
+  color: $dark-green;
+  font-size: rem(24);
+  font-family: $font-family-jp;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.sub-blog__head span::before {
+  content: "";
+  background-image: url(../images/sub/whale-black.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(50);
+  height: rem(50);
+  margin-right: rem(8); /* 間隔を調整 */
+}
+
+.sub-blog__review,
+.sub-blog__campaign,
+.sub-blog__archive {
+  margin-top: rem(80);
+}
+
+.sub-blog__popular-cards,
+.sub-blog__review-card,
+.sub-blog__campaign-cards {
+  margin-top: rem(24);
+}
+
+.sub-blog__campaign-card + .sub-blog__campaign-card {
+  margin-top: rem(40);
+}
+
+.sub-blog__archive-summary,
+.sub-blog__archive-item {
+  font-size: rem(24);
+  font-family: $font-family-jp;
+  color: $green;
+}
+
+.sub-blog__archive-item {
+  margin-left: rem(8);
+}
+
+.sub-blog__archive-item::before {
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #408f95;
+  border-right: 0;
+  margin-right: rem(8);
+}

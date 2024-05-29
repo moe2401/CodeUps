@@ -1,0 +1,96 @@
+@use "global" as *;
+
+.sub-blog-detail__time {
+  font-family: $font-family-en;
+  font-size: rem(14);
+  line-height: 1.2857;
+  color: $dark-green;
+}
+
+.sub-blog-detail__category {
+  font-family: $font-family-jp;
+  font-size: rem(24);
+  font-weight: $medium;
+  line-height: 1;
+  color: $dark-green;
+  padding-bottom: rem(4);
+  border-bottom: 1px solid $green;
+  margin-top: rem(8);
+}
+
+.sub-blog-detail__img {
+  //   max-width: rem(345);
+  min-width: 100%;
+  width: 100%;
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.sub-blog-detail__img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 345 / 231;
+}
+
+.sub-blog-detail__text {
+  font-family: $font-family-jp;
+  font-size: rem(16);
+  color: $black;
+  line-height: 1.5;
+}
+
+.sub-blog-detail__text,
+.sub-blog-detail__lists {
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.sub-blog-detail__item {
+  font-family: $font-family-jp;
+  font-size: rem(16);
+  color: $black;
+  line-height: 1.5;
+}
+
+.sub-blog-detail__item::before {
+  content: "";
+  background-image: url(../images/sub/star-fish-green.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: rem(18);
+  height: rem(18);
+  margin-right: rem(9);
+}
+
+.sub-blog-detail__pagenavi {
+  text-align: center;
+  margin-top: rem(40);
+}
+
+.sub-blog-detail__pagenavi-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: rem(158);
+  margin: 0 auto;
+}
+
+.sub-blog-detail__pagenavi a {
+  width: rem(38);
+  height: rem(38);
+  background-color: $white;
+  color: $green;
+  border: 1px solid $green;
+  display: inline-block;
+  padding: rem(4);
+  transition: 0.3s;
+}
+
+.sub-blog-detail__pagenavi a:hover {
+  background-color: $green;
+  color: $white;
+}

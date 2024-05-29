@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.review-card__img {
+  width: 100%;
+  max-width: rem(294);
+}
+
+.review-card__img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 294 / 218;
+}
+
+.review-card__category {
+  font-size: rem(12);
+  font-family: $font-family-jp;
+  color: $dark-green;
+  line-height: 1.5;
+  margin-top: rem(16);
+}
+
+.review-card__text {
+  font-size: rem(24);
+  font-family: $font-family-jp;
+  color: $dark-green;
+  line-height: 1;
+  font-weight: $medium;
+  margin-top: rem(8);
+}
+
+.review-card__button {
+  margin-top: rem(40);
+  text-align: center;
+}

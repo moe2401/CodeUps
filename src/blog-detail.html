@@ -65,13 +65,15 @@
         <nav class="header__nav">
           <ul class="header__nav-items">
             <li class="header__nav-item">
-              <a href="./campaign.html">Campaign<span>キャンペーン</span></a>
+              <a href="#">Campaign<span>キャンペーン</span></a>
             </li>
             <li class="header__nav-item">
               <a href="./about-us.html">About us<span>私たちについて</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#">Information<span>ダイビング情報</span></a>
+              <a href="./information.html"
+                >Information<span>ダイビング情報</span></a
+              >
             </li>
             <li class="header__nav-item">
               <a href="./blog.html">Blog<span>ブログ</span></a>
@@ -198,22 +200,22 @@
           <picture class="sub-mv__img">
             <source
               media="(max-width: 768px)"
-              srcset="./assets/images/sub/sub-info-sp-img.jpg"
+              srcset="./assets/images/sub/sub-blog-sp-img.jpg"
             />
             <img
-              src="./assets/images/sub/sub-info-pc-img.jpg"
+              src="./assets/images/sub/sub-blog-pc-img.jpg"
               alt="2匹の黄色い魚が泳いでいる様子"
             />
           </picture>
         </div>
         <div class="sub-mv__title-wrap sub-page-title">
-          <h2 class="sub-page-title__main">information</h2>
+          <h2 class="sub-page-title__main">blog</h2>
         </div>
       </section>
 
-      <section class="sub-information layout-sub-information">
-        <div class="sub-information__inner inner">
-          <div class="sub-information__breadcrumb breadcrumb">
+      <div class="sub-blog layout-sub-blog">
+        <div class="sub-blog__inner inner">
+          <div class="sub-blog__breadcrumb breadcrumb">
             <div class="breadcrumb__inner">
               <!-- Breadcrumb NavXTで出力される部分 ここから -->
               <span>
@@ -223,141 +225,273 @@
               </span>
               &nbsp;&gt;&nbsp;
               <span>
-                <span class="breadcrumb__current-item">ダイビング情報</span>
+                <span class="breadcrumb__current-item">ブログ一覧</span>
+              </span>
+              &nbsp;&gt;&nbsp;
+              <span>
+                <span class="breadcrumb__current-item">ブログ詳細</span>
               </span>
               <!-- Breadcrumb NavXTで出力される部分 ここまで -->
             </div>
           </div>
 
-          <div class="sub-information__contents">
-            <div class="sub-information__tab tab-info">
-              <ul class="tab-info__menu">
-                <li
-                  class="tab-info__menu-item js-tab-info-menu is-tab"
-                  data-number="tab01"
-                  data-image-default="./assets/images/sub/whale-white.png"
-                  data-image-active="./assets/images/sub/whale-green.png"
+          <div class="sub-blog__content">
+            <div class="sub-blog__main sub-blog-detail">
+              <div class="sub-blog-detail__detail">
+                <time class="sub-blog-detail__time" datetime="2023-11-17"
+                  >2023.11/17</time
                 >
-                  <div class="tab-info__img u-desktop">
-                    <img
-                      src="./assets/images/sub/whale-green.png"
-                      alt="鯨のアイコン"
-                    />
+                <p class="sub-blog-detail__category">ライセンス取得</p>
+                <div class="sub-blog-detail__img">
+                  <img
+                    src="./assets/images/common/blog_1.jpg"
+                    alt="ピンクのサンゴ礁の写真"
+                  />
+                </div>
+
+                <p class="sub-blog-detail__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+
+                <div class="sub-blog-detail__img">
+                  <img
+                    src="./assets/images/common/blog_1.jpg"
+                    alt="ピンクのサンゴ礁の写真"
+                  />
+                </div>
+                <p class="sub-blog-detail__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+
+                <ul class="sub-blog-detail__lists">
+                  <li class="sub-blog-detail__item">リスト１</li>
+                  <li class="sub-blog-detail__item">リスト2</li>
+                  <li class="sub-blog-detail__item">リスト3</li>
+                </ul>
+
+                <p class="sub-blog-detail__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+              </div>
+
+              <div class="sub-blog-detail__pagenavi">
+                <div class="sub-blog-detail__pagenavi-inner">
+                  <!-- WP-PageNaviで出力される部分 ここから -->
+                  <div class="wp-pagenavi" role="navigation">
+                    <a class="previouspostslink" rel="prev" href="#">&lt;</a>
+                    <a class="nextpostslink" rel="next" href="#">&gt;</a>
                   </div>
-                  <span>ライセンス<br class="u-mobile" />講習</span>
-                </li>
-
-                <li
-                  class="tab-info__menu-item js-tab-info-menu"
-                  data-number="tab02"
-                  data-image-default="./assets/images/sub/whale-white.png"
-                  data-image-active="./assets/images/sub/whale-green.png"
-                >
-                  <div class="tab-info__img u-desktop">
-                    <img
-                      src="./assets/images/sub/whale-green.png"
-                      alt="鯨のアイコン"
-                    />
-                  </div>
-                  <span>ファン<br class="u-mobile" />ダイビング</span>
-                </li>
-
-                <li
-                  class="tab-info__menu-item js-tab-info-menu"
-                  data-number="tab03"
-                  data-image-default="./assets/images/sub/whale-white.png"
-                  data-image-active="./assets/images/sub/whale-green.png"
-                >
-                  <div class="tab-info__img u-desktop">
-                    <img
-                      src="./assets/images/sub/whale-green.png"
-                      alt="鯨のアイコン"
-                    />
-                  </div>
-                  <span>体験<br class="u-mobile" />ダイビング</span>
-                </li>
-              </ul>
-
-              <ul class="tab-info__content">
-                <li
-                  id="tab01"
-                  class="tab-info__content-item js-tab-info-content is-tab"
-                >
-                  <a href="#" class="info-card">
-                    <div class="info-card__body">
-                      <div class="info-card__content">
-                        <div class="info-card__meta">
-                          <p class="info-card__category">ライセンス講習</p>
-                        </div>
-                        <p class="info-card__text">
-                          泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！
-                        </p>
-                      </div>
-
-                      <div class="info-card__img">
-                        <img
-                          src="./assets/images/sub/license.jpg"
-                          alt="5人おダイバーが海に浮かんでいる様子"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li
-                  id="tab02"
-                  class="tab-info__content-item js-tab-info-content"
-                >
-                  <a href="#" class="info-card">
-                    <div class="info-card__body">
-                      <div class="info-card__content">
-                        <div class="info-card__meta">
-                          <p class="info-card__category">ファンダイビング</p>
-                        </div>
-                        <p class="info-card__text">
-                          ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
-                        </p>
-                      </div>
-
-                      <div class="info-card__img">
-                        <img
-                          src="./assets/images/sub/fundiving.jpg"
-                          alt="5人おダイバーが海に浮かんでいる様子"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li
-                  id="tab03"
-                  class="tab-info__content-item js-tab-info-content"
-                >
-                  <a href="#" class="info-card">
-                    <div class="info-card__body">
-                      <div class="info-card__content">
-                        <div class="info-card__meta">
-                          <p class="info-card__category">体験ダイビング</p>
-                        </div>
-                        <p class="info-card__text">
-                          ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
-                        </p>
-                      </div>
-
-                      <div class="info-card__img">
-                        <img
-                          src="./assets/images/sub/sub-aboutus_3.jpg"
-                          alt="5人おダイバーが海に浮かんでいる様子"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+                  <!-- WP-PageNaviで出力される部分 ここまで -->
+                </div>
+              </div>
             </div>
+
+            <aside class="sub-blog__aside">
+              <div class="sub-blog__aside-inner">
+                <div class="sub-blog__popular">
+                  <div class="sub-blog__head head">
+                    <span>人気記事</span>
+                  </div>
+                  <ul class="sub-blog__popular-cards popular-cards">
+                    <li class="popular-cards__item">
+                      <a href="#" class="popular-card">
+                        <div class="popular-card__wrap">
+                          <div class="popular-card__img">
+                            <img
+                              src="./assets/images/sub/blog_4.jpg"
+                              alt="黄色の魚が泳いでいる写真"
+                            />
+                          </div>
+                          <div class="popular-card__body">
+                            <div class="popular-card__meta">
+                              <time
+                                class="popular-card__time"
+                                datetime="2023-11-17"
+                                >2023.11/17</time
+                              >
+                              <p class="popular-card__category">
+                                ライセンス取得
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="popular-cards__item">
+                      <a href="#" class="popular-card">
+                        <div class="popular-card__wrap">
+                          <div class="popular-card__img">
+                            <img
+                              src="./assets/images/common/blog_2.jpg"
+                              alt="海亀が泳いでいる写真"
+                            />
+                          </div>
+                          <div class="popular-card__body">
+                            <div class="popular-card__meta">
+                              <time
+                                class="popular-card__time"
+                                datetime="2023-11-17"
+                                >2023.11/17</time
+                              >
+                              <p class="popular-card__category">
+                                ウミガメと泳ぐ
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="popular-cards__item">
+                      <a href="#" class="popular-card">
+                        <div class="popular-card__wrap">
+                          <div class="popular-card__img">
+                            <img
+                              src="./assets/images/common/blog_3.jpg"
+                              alt="カクレクマノミと珊瑚礁の写真"
+                            />
+                          </div>
+                          <div class="popular-card__body">
+                            <div class="popular-card__meta">
+                              <time
+                                class="popular-card__time"
+                                datetime="2023-11-17"
+                                >2023.11/17</time
+                              >
+                              <p class="popular-card__category">
+                                カクレクマノミ
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="sub-blog__review">
+                  <div class="sub-blog__head">
+                    <span>口コミ</span>
+                  </div>
+                  <div class="sub-blog__review-card">
+                    <a href="#" class="review-card">
+                      <div class="review-card__img">
+                        <img
+                          src="./assets/images/sub/couple.jpg"
+                          alt="ソファーに座り腕を組んでいる男女の様子"
+                        />
+                      </div>
+                      <div class="review-card__body">
+                        <p class="review-card__category">30代(カップル)</p>
+                        <p class="review-card__text">
+                          ここにタイトルが入ります。ここにタイトル
+                        </p>
+
+                        <div class="review-card__button">
+                          <a href="#" class="button">
+                            <span>View more</span>
+                          </a>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="sub-blog__campaign">
+                  <div class="sub-blog__head">
+                    <span>キャンペーン</span>
+                  </div>
+                  <ul class="sub-blog__campaign-cards">
+                    <li class="sub-blog__campaign-card">
+                      <a href="#" class="campaign-card campaign-card--aside">
+                        <div class="campaign-card__img">
+                          <img
+                            src="./assets/images/common/campaign_1.jpg"
+                            alt="海の中を色鮮やかなたくさんの魚が泳いでいる様子"
+                          />
+                        </div>
+                        <div class="campaign-card__item-body">
+                          <div class="campaign-card__meta">
+                            <p
+                              class="campaign-card__category campaign-card__category--center"
+                            >
+                              ライセンス取得
+                            </p>
+                          </div>
+                          <div class="campaign-card__contents">
+                            <p class="campaign-card__title">
+                              全部コミコミ(お一人様)
+                            </p>
+                            <div class="campaign-card__price-body">
+                              <span class="campaign-card__price">¥56,000</span>
+                              <span class="campaign-card__price-discount"
+                                >¥46,000</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="sub-blog__campaign-card">
+                      <a href="#" class="campaign-card campaign-card--aside">
+                        <div class="campaign-card__img">
+                          <img
+                            src="./assets/images/common/campaign_2.jpg"
+                            alt="海の中を色鮮やかなたくさんの魚が泳いでいる様子"
+                          />
+                        </div>
+                        <div class="campaign-card__item-body">
+                          <div class="campaign-card__meta">
+                            <p
+                              class="campaign-card__category campaign-card__category--center"
+                            >
+                              貸切体験ダイビング
+                            </p>
+                          </div>
+                          <div class="campaign-card__contents">
+                            <p class="campaign-card__title">
+                              全部コミコミ(お一人様)
+                            </p>
+                            <div class="campaign-card__price-body">
+                              <span class="campaign-card__price">¥24,000</span>
+                              <span class="campaign-card__price-discount"
+                                >¥18,000</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <div class="review-card__button">
+                      <a href="#" class="button">
+                        <span>View more</span>
+                      </a>
+                    </div>
+                  </ul>
+                </div>
+
+                <div class="sub-blog__archive">
+                  <div class="sub-blog__head">
+                    <span>アーカイブ</span>
+                  </div>
+
+                  <details class="sub-blog__archive-details">
+                    <summary class="sub-blog__archive-summary">2023</summary>
+                    <ul class="sub-blog__archive-lists">
+                      <li class="sub-blog__archive-item">3月</li>
+                      <li class="sub-blog__archive-item">2月</li>
+                      <li class="sub-blog__archive-item">1月</li>
+                    </ul>
+                  </details>
+                  <details class="sub-blog__archive-details">
+                    <summary class="sub-blog__archive-summary">2022</summary>
+                  </details>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
-      </section>
+      </div>
 
       <section class="contact layout-contact layout-contact--aboutus">
         <div class="contact__inner inner">
@@ -405,7 +539,7 @@
                 <p class="contact__button-text">ご予約・お問い合わせはコチラ</p>
               </div>
               <div class="contact__button">
-                <a href="#" class="button">
+                <a href="./contact.html" class="button">
                   <span>Contact us</span>
                 </a>
               </div>
@@ -486,7 +620,7 @@
             <ul class="nav-contents__contents">
               <li class="nav-contents__group">
                 <div class="nav-contents__title">
-                  <a href="#">ダイビング情報</a>
+                  <a href="./information.html">ダイビング情報</a>
                 </div>
                 <div>
                   <ul class="nav-contents__items">
