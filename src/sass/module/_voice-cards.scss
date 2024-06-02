@@ -8,3 +8,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.voice-cards.voice-cards--gap {
+  @include mq("md") {
+    row-gap: rem(80);
+  }
+}

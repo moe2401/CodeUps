@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.form-select {
+  position: relative;
+}
+
+.form-select select {
+  padding: rem(11) rem(50) rem(12) rem(8);
+  width: 100%;
+  font-size: rem(12);
+  line-height: 1;
+  border-radius: 0;
+  border: 1px solid $green;
+  cursor: pointer;
+  position: relative;
+}
+
+.form-select::before {
+  position: absolute;
+  content: "";
+  right: rem(8); /* 適宜調整 */
+  top: 50%;
+  transform: translateY(-50%); /* 垂直方向の位置調整 */
+  width: rem(0);
+  height: rem(0);
+  border-style: solid;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: 9px solid #408f95;
+  border-bottom: 0;
+}

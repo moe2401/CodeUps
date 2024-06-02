@@ -237,4 +237,12 @@ jQuery(function ($) {
       .find(".tab-info__img img")
       .attr("src", "../assets/images/sub/whale-white.png");
   });
+
+  //FAQ
+  jQuery(function ($) {
+    $(".js-faq-question").on("click", function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass("is-open");
+    });
+  });
 });

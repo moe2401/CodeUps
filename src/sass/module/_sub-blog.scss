@@ -1,7 +1,17 @@
 @use "global" as *;
 
+.sub-blog__inner.inner {
+  padding-right: rem(20);
+  padding-left: rem(20);
+  @include mq("md") {
+    padding-right: rem(25);
+    padding-left: rem(25);
+  }
+}
+
 .sub-blog__pagenavi {
   margin-top: rem(80);
+  
 }
 
 .sub-blog__content {
@@ -80,6 +90,14 @@
   margin-top: rem(40);
 }
 
+.sub-blog__archive-details {
+  margin-top: rem(24);
+}
+
+.sub-blog__archive-details + .sub-blog__archive-details {
+  margin-top: rem(4);
+}
+
 .sub-blog__archive-summary,
 .sub-blog__archive-item {
   font-size: rem(24);
@@ -88,7 +106,8 @@
 }
 
 .sub-blog__archive-item {
-  margin-left: rem(8);
+  margin-left: rem(30);
+  margin-top: rem(4);
 }
 
 .sub-blog__archive-item::before {

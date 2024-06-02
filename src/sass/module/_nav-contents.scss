@@ -21,6 +21,10 @@
   }
 }
 
+.nav-contents__contents.nav-contents__contents--darkGreen {
+  color: $dark-green;
+}
+
 .nav-contents__contents:nth-child(2) {
   @include mq("md") {
     order: 4;
@@ -55,6 +59,10 @@
   display: inline-block;
   width: rem(18);
   height: rem(18);
+}
+
+.nav-contents__title.nav-contents__title--dark::before {
+  background-image: url(../images/sub/star-fish-black.png);
 }
 
 .nav-contents__title + .nav-contents__title {

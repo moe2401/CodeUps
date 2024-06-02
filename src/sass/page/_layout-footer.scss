@@ -4,8 +4,20 @@
   margin-top: rem(100);
 }
 
-.layout-footer--info {
+.layout-footer.layout-footer--info {
   @include mq("md") {
     margin-top: rem(158);
+  }
+}
+
+.layout-footer.layout-footer--subBlog {
+  @include mq("md") {
+    margin-top: rem(140);
+  }
+}
+
+.layout-footer.layout-footer--subPrice {
+  @include mq("md") {
+    margin-top: rem(160);
   }
 }

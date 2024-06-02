@@ -71,22 +71,24 @@
               <a href="./about-us.html">About us<span>私たちについて</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#">Information<span>ダイビング情報</span></a>
+              <a href="./information.html"
+                >Information<span>ダイビング情報</span></a
+              >
             </li>
             <li class="header__nav-item">
               <a href="./blog.html">Blog<span>ブログ</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="./voice.html">Voice<span>お客様の声</span></a>
+              <a href="#">Voice<span>お客様の声</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="./price.html">Price<span>料金一覧</span></a>
+              <a href="#">Price<span>料金一覧</span></a>
             </li>
             <li class="header__nav-item">
               <a href="./faq.html">FAQ<span>よくある質問</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="./contact.html">Contact<span>お問合せ</span></a>
+              <a href="#">Contact<span>お問合せ</span></a>
             </li>
           </ul>
         </nav>
@@ -127,10 +129,10 @@
               <ul class="nav-contents__contents">
                 <li class="nav-contents__group">
                   <div class="nav-contents__title">
-                    <a href="#">お客様の声</a>
+                    <a href="./voice.html">お客様の声</a>
                   </div>
                   <div class="nav-contents__title">
-                    <a href="./price.html">料金一覧</a>
+                    <a href="#">料金一覧</a>
                   </div>
                   <ul class="nav-contents__items">
                     <li class="nav-contents__item">
@@ -182,7 +184,7 @@
                     <a href="#">利用規約</a>
                   </div>
                   <div class="nav-contents__title">
-                    <a href="./contact.html">お問い合わせ</a>
+                    <a href="#">お問い合わせ</a>
                   </div>
                 </li>
               </ul>
@@ -198,22 +200,22 @@
           <picture class="sub-mv__img">
             <source
               media="(max-width: 768px)"
-              srcset="./assets/images/sub/sub-info-sp-img.jpg"
+              srcset="./assets/images/sub/sub-contact-sp-img.jpg"
             />
             <img
-              src="./assets/images/sub/sub-info-pc-img.jpg"
-              alt="2匹の黄色い魚が泳いでいる様子"
+              src="./assets/images/sub/sub-contact-pc-img.jpg"
+              alt="海岸に波が押し寄せている様子"
             />
           </picture>
         </div>
         <div class="sub-mv__title-wrap sub-page-title">
-          <h2 class="sub-page-title__main">information</h2>
+          <h2 class="sub-page-title__main">contact</h2>
         </div>
       </section>
 
-      <section class="sub-information layout-sub-information decoration">
-        <div class="sub-information__inner inner">
-          <div class="sub-information__breadcrumb breadcrumb">
+      <div class="sub-contact layout-sub-contact decoration">
+        <div class="sub-contact__inner inner">
+          <div class="sub-contact__breadcrumb breadcrumb">
             <div class="breadcrumb__inner">
               <!-- Breadcrumb NavXTで出力される部分 ここから -->
               <span>
@@ -223,199 +225,137 @@
               </span>
               &nbsp;&gt;&nbsp;
               <span>
-                <span class="breadcrumb__current-item">ダイビング情報</span>
+                <span class="breadcrumb__current-item">お問い合わせ</span>
               </span>
               <!-- Breadcrumb NavXTで出力される部分 ここまで -->
             </div>
           </div>
 
-          <div class="sub-information__contents">
-            <div class="sub-information__tab tab-info">
-              <ul class="tab-info__menu">
-                <li
-                  class="tab-info__menu-item js-tab-info-menu is-tab"
-                  data-number="tab01"
-                  data-image-default="./assets/images/sub/whale-white.png"
-                  data-image-active="./assets/images/sub/whale-green.png"
-                >
-                  <div class="tab-info__img u-desktop">
-                    <img
-                      src="./assets/images/sub/whale-green.png"
-                      alt="鯨のアイコン"
-                    />
+          <div class="sub-contact__form">
+            <div class="sub-contact__inner">
+              <form class="contact-form" action="">
+                <dl class="contact-form__wrap">
+                  <div class="contact-form__label-wrap">
+                    <dt class="contact-form__label">お名前<span>必須</span></dt>
+                    <dd class="contact-form__input">
+                      <input type="text" placeholder="沖縄&emsp;太郎" />
+                    </dd>
                   </div>
-                  <span>ライセンス<br class="u-mobile" />講習</span>
-                </li>
+                </dl>
 
-                <li
-                  class="tab-info__menu-item js-tab-info-menu"
-                  data-number="tab02"
-                  data-image-default="./assets/images/sub/whale-white.png"
-                  data-image-active="./assets/images/sub/whale-green.png"
-                >
-                  <div class="tab-info__img u-desktop">
-                    <img
-                      src="./assets/images/sub/whale-green.png"
-                      alt="鯨のアイコン"
-                    />
+                <dl class="contact-form__wrap">
+                  <div class="contact-form__label-wrap">
+                    <dt class="contact-form__label">
+                      メールアドレス<span>必須</span>
+                    </dt>
+                    <dd class="contact-form__input">
+                      <input type="email" placeholder="aaa000@ggmail.com" />
+                    </dd>
                   </div>
-                  <span>ファン<br class="u-mobile" />ダイビング</span>
-                </li>
+                </dl>
 
-                <li
-                  class="tab-info__menu-item js-tab-info-menu"
-                  data-number="tab03"
-                  data-image-default="./assets/images/sub/whale-white.png"
-                  data-image-active="./assets/images/sub/whale-green.png"
-                >
-                  <div class="tab-info__img u-desktop">
-                    <img
-                      src="./assets/images/sub/whale-green.png"
-                      alt="鯨のアイコン"
-                    />
+                <dl class="contact-form__wrap">
+                  <div class="contact-form__label-wrap">
+                    <dt class="contact-form__label">
+                      電話番号<span>必須</span>
+                    </dt>
+                    <dd class="contact-form__input">
+                      <input type="tel" placeholder="000-0000-0000" />
+                    </dd>
                   </div>
-                  <span>体験<br class="u-mobile" />ダイビング</span>
-                </li>
-              </ul>
+                </dl>
 
-              <ul class="tab-info__content">
-                <li
-                  id="tab01"
-                  class="tab-info__content-item js-tab-info-content is-tab"
-                >
-                  <a href="#" class="info-card">
-                    <div class="info-card__body">
-                      <div class="info-card__content">
-                        <div class="info-card__meta">
-                          <p class="info-card__category">ライセンス講習</p>
-                        </div>
-                        <p class="info-card__text">
-                          泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！
-                        </p>
-                      </div>
+                <dl class="contact-form__wrap">
+                  <div class="contact-form__label-wrap">
+                    <dt class="contact-form__label">
+                      お問合せ項目<span>必須</span>
+                    </dt>
+                    <dd class="contact-form__checkbox">
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="category"
+                          value="ダイビング講習について"
+                        /><span>ダイビング講習について</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="category"
+                          value="ファンダイビングについて"
+                        /><span>ファンダイビングについて</span></label
+                      >
+                      <label
+                        ><input
+                          type="checkbox"
+                          name="category"
+                          value="体験ダイビングについて"
+                        /><span>体験ダイビングについて</span></label
+                      >
+                    </dd>
+                  </div>
+                </dl>
 
-                      <div class="info-card__img">
-                        <img
-                          src="./assets/images/sub/license.jpg"
-                          alt="5人おダイバーが海に浮かんでいる様子"
-                        />
-                      </div>
-                    </div>
+                <dl class="contact-form__wrap">
+                  <div class="contact-form__label-wrap">
+                    <dt class="contact-form_label">キャンペーン</dt>
+                    <dd class="contact-form__select form-select">
+                      <select>
+                        <option hidden>キャンペーン内容を選択</option>
+                        <option value="ライセンス取得">ライセンス取得</option>
+                        <option value="貸切体験ダイビング">
+                          貸切体験ダイビング
+                        </option>
+                        <option value="ナイトダイビング">
+                          ナイトダイビング
+                        </option>
+                        <option value="貸切ファンダイビング">
+                          貸切ファンダイビング
+                        </option>
+                      </select>
+                    </dd>
+                  </div>
+                </dl>
+
+                <dl class="contact-form__wrap">
+                  <div class="contact-form__label-wrap">
+                    <dt class="contact-form__label">
+                      お問合せ内容<span>必須</span>
+                    </dt>
+                    <dd class="contact-form__textarea">
+                      <textarea
+                        name="message"
+                        placeholder="ご自由にご記入ください。"
+                      ></textarea>
+                    </dd>
+                  </div>
+                </dl>
+                <div class="contact-form__privacy">
+                  <label class="contact-form__privacy-label">
+                    <input
+                      type="checkbox"
+                      name="privacy-policy"
+                      value="agree"
+                    />
+                    <span
+                      >個人情報の取り扱いについて同意のうえ 送信します。</span
+                    >
+                  </label>
+                </div>
+
+                <div class="contact__button">
+                  <a href="#" class="button">
+                    <span>Send</span>
                   </a>
-                </li>
-
-                <li
-                  id="tab02"
-                  class="tab-info__content-item js-tab-info-content"
-                >
-                  <a href="#" class="info-card">
-                    <div class="info-card__body">
-                      <div class="info-card__content">
-                        <div class="info-card__meta">
-                          <p class="info-card__category">ファンダイビング</p>
-                        </div>
-                        <p class="info-card__text">
-                          ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
-                        </p>
-                      </div>
-
-                      <div class="info-card__img">
-                        <img
-                          src="./assets/images/sub/fundiving.jpg"
-                          alt="5人おダイバーが海に浮かんでいる様子"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li
-                  id="tab03"
-                  class="tab-info__content-item js-tab-info-content"
-                >
-                  <a href="#" class="info-card">
-                    <div class="info-card__body">
-                      <div class="info-card__content">
-                        <div class="info-card__meta">
-                          <p class="info-card__category">体験ダイビング</p>
-                        </div>
-                        <p class="info-card__text">
-                          ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
-                        </p>
-                      </div>
-
-                      <div class="info-card__img">
-                        <img
-                          src="./assets/images/sub/sub-aboutus_3.jpg"
-                          alt="5人おダイバーが海に浮かんでいる様子"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="contact layout-contact layout-contact--aboutus">
-        <div class="contact__inner inner">
-          <div class="contact__wrap">
-            <div class="contact__info">
-              <div class="contact__logo">
-                <img
-                  src="./assets/images/common/contact-logo.svg"
-                  alt="CodeUpsのロゴ"
-                />
-              </div>
-              <div class="contact__detail">
-                <div class="contact__lists-wrap">
-                  <ul class="contact__lists">
-                    <li class="contact__list">沖縄県那覇市1-1</li>
-                    <li class="contact__list">TEL:0120-000-0000</li>
-                    <li class="contact__list">営業時間:8:30-19:00</li>
-                    <li class="contact__list">定休日:毎週火曜日</li>
-                  </ul>
-                </div>
-
-                <div class="contact__map-wrap">
-                  <div class="contact__map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d57269.05009306561!2d127.63670374973589!3d26.218932030701666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m5!1s0x34e5698332101cf9%3A0xa001fb75096d7c18!2z44CSOTAwLTAwMzIg5rKW57iE55yM6YKj6KaH5biC5p2-5bGx77yR5LiB55uu!3m2!1d26.2188609!2d127.6779035!4m0!5e0!3m2!1sja!2sjp!4v1712753897717!5m2!1sja!2sjp"
-                      width="600"
-                      height="450"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="contact__contents">
-              <div class="contact__header section-header">
-                <p class="section-header__title section-header__title--contact">
-                  Contact
-                </p>
-                <h2 class="section-header__sub section-header__sub--contact">
-                  お問い合わせ
-                </h2>
-                <p class="contact__button-text">ご予約・お問い合わせはコチラ</p>
-              </div>
-              <div class="contact__button">
-                <a href="#" class="button">
-                  <span>Contact us</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
 
-    <footer class="footer layout-footer">
+    <footer class="footer layout-footer layout-footer--subPrice">
       <div class="footer__inner inner">
         <div class="footer__wrap">
           <div class="footer__logo">
@@ -486,7 +426,7 @@
             <ul class="nav-contents__contents">
               <li class="nav-contents__group">
                 <div class="nav-contents__title">
-                  <a href="#">ダイビング情報</a>
+                  <a href="./information.html">ダイビング情報</a>
                 </div>
                 <div>
                   <ul class="nav-contents__items">
@@ -519,7 +459,7 @@
                   <a href="#">利用規約</a>
                 </div>
                 <div class="nav-contents__title">
-                  <a href="./contact.html">お問い合わせ</a>
+                  <a href="#">お問い合わせ</a>
                 </div>
               </li>
             </ul>

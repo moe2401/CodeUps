@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.sub-thanks__content {
+  margin-top: rem(52);
+  font-size: rem(16);
+  font-family: $font-family-jp;
+  color: $dark-green;
+  line-height: 1;
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(155);
+  }
+}
+
+.sub-thanks__text {
+  margin-top: rem(57);
+  line-height: 1.5;
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}

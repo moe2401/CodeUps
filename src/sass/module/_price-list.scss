@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.price-list__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: 1;
+  font-family: $font-family-jp;
+  background-color: $green;
+  padding: rem(8) rem(0);
+  @include mq("md") {
+    flex-direction: column-reverse;
+    width: rem(200);
+  }
+}
+
+.price-list__title span::before {
+  content: "";
+  background-image: url(../images/sub/whale-light.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(24);
+  height: rem(24);
+  display: inline-block;
+  margin-right: rem(8);
+  @include mq("md") {
+    width: rem(64);
+    height: rem(64);
+  }
+}
+
+.price-list__content {
+  @include mq("md") {
+    max-width: rem(500);
+    width: 100%;
+  }
+}
+
+.price-list__wrap {
+  display: flex;
+  border-right: 1px solid $green;
+  border-left: 1px solid $green;
+  @include mq("md") {
+    border-top: 1px solid $green;
+  }
+}
+
+.price-list__wrap:not(:first-child) {
+  border-top: 1px solid $green;
+}
+
+.price-list__data {
+  height: rem(60);
+  font-size: rem(16);
+  color: $dark-green;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-list__data:nth-child(odd) {
+  width: 69.5%;
+
+  @include mq("md") {
+    width: 67.72%;
+    justify-content: left;
+    padding-left: rem(15);
+  }
+}
+.price-list__data:nth-child(even) {
+  width: 30.72%;
+  border-left: 1px solid $green;
+  text-indent: 1em;
+  padding: rem(18) rem(0);
+  @include mq("md") {
+    width: 32.27%;
+    justify-content: right;
+    padding-right: rem(16);
+  }
+}

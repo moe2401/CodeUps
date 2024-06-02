@@ -7,6 +7,7 @@
   box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
   height: 100%;
   display: block;
+  // max-width: rem(333);
 
   @include mq("md") {
     max-width: rem(333);

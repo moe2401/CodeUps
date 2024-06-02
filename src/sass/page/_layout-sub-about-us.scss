@@ -2,24 +2,4 @@
 
 .layout-sub-about-us {
   margin-top: rem(5);
-  position: relative;
-}
-
-.layout-sub-about-us::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/common/voice-bg-fish.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: -10;
-  width: rem(120);
-  height: rem(55);
-  top: rem(51);
-  left: calc(50% - min(47vw, rem(620)));
-
-  @include mq("md") {
-    width: rem(301);
-    height: rem(138);
-    top: rem(-145);
-  }
 }
