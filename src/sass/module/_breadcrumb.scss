@@ -1,6 +1,7 @@
 @use "global" as *;
 
-.breadcrumb__inner {
+.breadcrumb.breadcrumb--white {
+  color: $white;
 }
 
 .breadcrumb__inner span {

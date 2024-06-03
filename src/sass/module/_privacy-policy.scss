@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.privacy-policy__content {
+  margin-top: rem(63);
+
+  @include mq("md") {
+    margin-top: rem(158);
+    max-width: rem(800);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.privacy-policy__title {
+  font-size: rem(24);
+  font-weight: $medium;
+  font-family: $font-family-jp;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.privacy-policy__wrap {
+  margin-top: rem(49);
+  line-height: 2;
+}
+
+.privacy-policy__box {
+  margin-top: rem(36);
+  color: $dark-green;
+  font-size: rem(16);
+}
+
+.privacy-policy__lists {
+  counter-reset: list-counter; // カウンターのリセット
+  list-style-type: none;
+  padding: 0;
+}
+
+.privacy-policy__list {
+  display: flex;
+  counter-increment: list-counter;
+  align-items: baseline;
+}
+
+.privacy-policy__list::before {
+  content: counter(list-counter) ". ";
+  margin-right: 0.5em;
+}
+
+.privacy-policy__text:last-child {
+  margin-top: rem(30);
+}

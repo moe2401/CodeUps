@@ -13,6 +13,14 @@
   }
 }
 
+.nav-contents__wrap.nav-contents__wrap--gap {
+  column-gap: rem(42);
+
+  @include mq("md") {
+    column-gap: rem(70);
+  }
+}
+
 .nav-contents__contents {
   color: $white;
   padding-left: rem(18);
