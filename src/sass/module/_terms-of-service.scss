@@ -27,7 +27,7 @@
 }
 
 .terms-of-service__box {
-  margin-top: rem(36);
+  margin-top: rem(31);
   color: $dark-green;
   font-size: rem(16);
 }
@@ -36,6 +36,7 @@
   counter-reset: list-counter; // カウンターのリセット
   list-style-type: none;
   padding: 0;
+  margin-left: rem(5);
 }
 
 .terms-of-service__list {
@@ -51,4 +52,7 @@
 
 .terms-of-service__wrap > .terms-of-service__text:last-child {
   margin-top: rem(54);
+  @include mq("md") {
+    margin-top: rem(42);
+  }
 }

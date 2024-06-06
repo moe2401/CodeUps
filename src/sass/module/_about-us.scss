@@ -42,6 +42,12 @@
   }
 }
 
+.about-us__text-wrap.about-us__text-wrap--margin {
+  @include mq("md") {
+    margin-top: rem(20);
+  }
+}
+
 .about-us__text {
   font-size: rem(16);
   font-family: $font-family-jp;
@@ -119,6 +125,8 @@
   margin-top: rem(40);
   @include mq("md") {
     margin-top: rem(0);
+    top: 40%;
+    left: 57.8%;
   }
 }
 

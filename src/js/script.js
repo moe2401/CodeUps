@@ -168,43 +168,35 @@ jQuery(function ($) {
     });
   });
 
-  // // モーダルウィンドウ
-  const galleryItems = document.querySelectorAll(".gallery-list__item");
-  const zoomContent = document.querySelector(".zoom__content");
-  const body = document.querySelector("body");
+  // モーダルウィンドウ
+  $(document).ready(function () {
+    $(".js-modal-open").click(function (e) {
+      e.preventDefault(); // リンクのデフォルトの動作をキャンセル
 
-  // 初期状態でzoomContentを非表示にする
-  // zoomContent.style.display = "none";
+      var imgSrc = $(this).find("img").attr("src");
+      var imgAlt = $(this).find("img").attr("alt");
 
-  // galleryItems.forEach((item) => {
-  //   item.addEventListener("click", () => {
-  //     const img = item.querySelector("img");
-  //     const zoomImg = document.createElement("img");
-  //     zoomImg.src = img.src;
-  //     zoomImg.alt = img.alt;
+      $(".bigimg img").attr("src", imgSrc);
+      $(".bigimg img").attr("alt", imgAlt);
 
-  //     // zoomContentの中身をリセット
-  //     zoomContent.innerHTML = "";
-  //     zoomContent.appendChild(zoomImg);
-  //     zoomContent.style.display = "flex";
+      $(".modal").fadeIn();
+      $("body").addClass("no-scroll"); // スクロールを無効化
+    });
 
-  //     // スクロールを無効化
-  //     body.classList.add("no-scroll");
+    $(".modal").click(function () {
+      $(this).fadeOut();
+      $("body").removeClass("no-scroll"); // スクロールを有効化
+    });
+  });
+
+  // $('.close-btn').click(function() {
+  //     $('.modal').fadeOut();
+  //     $('body,html').css('overflow-y', 'visible');
+  //     return false
   //   });
-  // });
-
-  // zoomContentがクリックされたら非表示にする;
-  // zoomContent.addEventListener("click", (event) => {
-  //   if (event.target === event.currentTarget) {
-  //     zoomContent.style.display = "none";
-
-  //     // スクロールを有効化
-  //     body.classList.remove("no-scroll");
-  //   }
-  // });
 
   //タブ切り替え
-  jQuery(function ($) {
+  $(function () {
     $(".js-tab-info-menu").on("click", function () {
       // 他のタブメニューアイテムの選択状態を解除
       $(".js-tab-info-menu").removeClass("is-tab");
@@ -220,22 +212,22 @@ jQuery(function ($) {
       $(".js-tab-info-menu")
         .not(this)
         .find(".tab-info__img img")
-        .attr("src", "../assets/images/sub/whale-green.png");
+        .attr("src", "./assets/images/sub/whale-green.png");
 
       // クリックされたタブのアイコン画像を緑に変更する
       $(this)
         .find(".tab-info__img img")
-        .attr("src", "../assets/images/sub/whale-green.png");
+        .attr("src", "./assets/images/sub/whale-green.png");
 
       // クリックされたタブに関連付けられた画像パスを取得し、画像のsrc属性を変更する
       var defaultImage = $(this).data("image-default");
       $(this).find(".tab-info__img img").attr("src", defaultImage);
-    });
 
-    // 初期状態でis-tabがついている要素の画像を白に設定
-    $(".js-tab-info-menu.is-tab")
-      .find(".tab-info__img img")
-      .attr("src", "../assets/images/sub/whale-white.png");
+      // タブをクリックしたときに画像が緑→白に変更
+      $(".js-tab-info-menu.is-tab")
+        .find(".tab-info__img img")
+        .attr("src", "./assets/images/sub/whale-white.png");
+    });
   });
 
   //FAQ

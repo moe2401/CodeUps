@@ -8,6 +8,42 @@
   }
 }
 
-.layout-contact--aboutus {
+.layout-contact.layout-contact--aboutus {
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}
+
+.layout-contact.layout-contact--campagin {
   margin-top: rem(104);
+  @include mq("md") {
+    margin-top: rem(140);
+  }
+}
+
+.layout-contact.layout-contact--info {
+  margin-top: rem(103);
+  @include mq("md") {
+    margin-top: rem(140);
+  }
+}
+
+.layout-contact.layout-contact--price {
+  margin-top: rem(92);
+  @include mq("md") {
+    margin-top: rem(111);
+  }
+}
+
+.layout-contact.layout-contact--site-map {
+  margin-top: rem(132);
+  @include mq("md") {
+  }
+}
+
+.layout-contact.layout-contact--terms-of-service {
+  margin-top: rem(106);
+  @include mq("md") {
+    margin-top: rem(137);
+  }
 }

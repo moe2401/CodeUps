@@ -1,16 +1,11 @@
 @use "global" as *;
 
 .sub-campaign__tab {
-  // position: relative;
-  margin-top: rem(52);
+  margin-top: rem(48);
   @include mq("md") {
     margin-top: rem(150);
   }
 }
-
-// .sub-campaign__tab::before {
-
-// }
 
 .sub-campaign__cards {
   @include mq("md") {
@@ -27,7 +22,7 @@
 }
 
 .sub-campaign__item:not(:first-child) {
-  margin-top: rem(40);
+  margin-top: rem(35);
   @include mq("md") {
     margin-top: rem(0);
   }
@@ -39,4 +34,7 @@
 
 .sub-campaign__pagenavi {
   margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(84);
+  }
 }

@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.tab {
-}
-
 .tab__menu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -28,7 +25,9 @@
   text-align: center;
 }
 
-.tab__menu-item.is-tab {
+.tab__menu-item:hover {
   color: $white;
   background-color: $green;
+  transition: 0.5s;
+  cursor: pointer;
 }

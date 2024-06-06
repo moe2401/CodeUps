@@ -9,9 +9,16 @@
   }
 }
 
+.sub-blog__inner.sub-blog__inner--padding.inner {
+  padding-right: rem(15);
+  padding-left: rem(15);
+}
+
 .sub-blog__pagenavi {
   margin-top: rem(80);
-  
+  @include mq("md") {
+    margin-top: rem(68);
+  }
 }
 
 .sub-blog__content {
@@ -91,7 +98,10 @@
 }
 
 .sub-blog__archive-details {
-  margin-top: rem(24);
+  margin-top: rem(25);
+  @include mq("md") {
+    margin-top: rem(11);
+  }
 }
 
 .sub-blog__archive-details + .sub-blog__archive-details {
@@ -105,8 +115,16 @@
   color: $green;
 }
 
+.sub-blog__archive-summary::marker {
+  font-size: rem(28);
+}
+
 .sub-blog__archive-item {
   margin-left: rem(30);
+  // margin-top: rem(4);
+}
+
+.sub-blog__archive-item:not(:first-child) {
   margin-top: rem(4);
 }
 
@@ -116,9 +134,9 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  border-left: 10px solid #408f95;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 17px solid #408f95;
   border-right: 0;
   margin-right: rem(8);
 }

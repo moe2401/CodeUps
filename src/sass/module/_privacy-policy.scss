@@ -27,9 +27,13 @@
 }
 
 .privacy-policy__box {
-  margin-top: rem(36);
+  margin-top: rem(27);
   color: $dark-green;
   font-size: rem(16);
+}
+
+.privacy-policy__box:not(:first-child) {
+  margin-top: rem(30);
 }
 
 .privacy-policy__lists {
@@ -42,6 +46,11 @@
   display: flex;
   counter-increment: list-counter;
   align-items: baseline;
+  margin-left: rem(5);
+}
+
+.privacy-policy__list:not(:first-child) {
+  margin-top: rem(2);
 }
 
 .privacy-policy__list::before {

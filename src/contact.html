@@ -79,10 +79,10 @@
               <a href="./blog.html">Blog<span>ブログ</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#">Voice<span>お客様の声</span></a>
+              <a href="./voice.html">Voice<span>お客様の声</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#">Price<span>料金一覧</span></a>
+              <a href="./price.html">Price<span>料金一覧</span></a>
             </li>
             <li class="header__nav-item">
               <a href="./faq.html">FAQ<span>よくある質問</span></a>
@@ -132,7 +132,7 @@
                     <a href="./voice.html">お客様の声</a>
                   </div>
                   <div class="nav-contents__title">
-                    <a href="#">料金一覧</a>
+                    <a href="./price.html">料金一覧</a>
                   </div>
                   <ul class="nav-contents__items">
                     <li class="nav-contents__item">
@@ -175,13 +175,15 @@
               <ul class="nav-contents__contents">
                 <li class="nav-contents__group">
                   <div class="nav-contents__title">
-                    <a href="#">よくある質問</a>
+                    <a href="./faq.html">よくある質問</a>
                   </div>
                   <div class="nav-contents__title">
-                    <a href="#">プライバシー<br class="u-mobile" />ポリシー</a>
+                    <a href="./privacy-policy.html"
+                      >プライバシー<br class="u-mobile" />ポリシー</a
+                    >
                   </div>
                   <div class="nav-contents__title">
-                    <a href="#">利用規約</a>
+                    <a href="./terms-of-service.html">利用規約</a>
                   </div>
                   <div class="nav-contents__title">
                     <a href="#">お問い合わせ</a>
@@ -209,7 +211,7 @@
           </picture>
         </div>
         <div class="sub-mv__title-wrap sub-page-title">
-          <h2 class="sub-page-title__main">contact</h2>
+          <h2 class="sub-page-title__main">Contact</h2>
         </div>
       </section>
 
@@ -233,6 +235,7 @@
 
           <div class="sub-contact__form">
             <div class="sub-contact__inner">
+              <div class="error-message"></div>
               <form class="contact-form" action="">
                 <dl class="contact-form__wrap">
                   <div class="contact-form__label-wrap">
@@ -298,7 +301,7 @@
 
                 <dl class="contact-form__wrap">
                   <div class="contact-form__label-wrap">
-                    <dt class="contact-form_label">キャンペーン</dt>
+                    <dt class="contact-form__label">キャンペーン</dt>
                     <dd class="contact-form__select form-select">
                       <select>
                         <option hidden>キャンペーン内容を選択</option>
@@ -323,10 +326,7 @@
                       お問合せ内容<span>必須</span>
                     </dt>
                     <dd class="contact-form__textarea">
-                      <textarea
-                        name="message"
-                        placeholder="ご自由にご記入ください。"
-                      ></textarea>
+                      <textarea name="message"></textarea>
                     </dd>
                   </div>
                 </dl>
@@ -343,7 +343,7 @@
                   </label>
                 </div>
 
-                <div class="contact__button">
+                <div class="contact__button contact__button--subContact">
                   <a href="#" class="button">
                     <span>Send</span>
                   </a>
@@ -355,7 +355,7 @@
       </div>
     </main>
 
-    <footer class="footer layout-footer layout-footer--subPrice">
+    <footer class="footer layout-footer layout-footer--contact">
       <div class="footer__inner inner">
         <div class="footer__wrap">
           <div class="footer__logo">
@@ -453,10 +453,12 @@
                   <a href="./faq.html">よくある質問</a>
                 </div>
                 <div class="nav-contents__title">
-                  <a href="#">プライバシー<br class="u-mobile" />ポリシー</a>
+                  <a href="./privacy-policy.html"
+                    >プライバシー<br class="u-mobile" />ポリシー</a
+                  >
                 </div>
                 <div class="nav-contents__title">
-                  <a href="#">利用規約</a>
+                  <a href="./terms-of-service.html">利用規約</a>
                 </div>
                 <div class="nav-contents__title">
                   <a href="#">お問い合わせ</a>

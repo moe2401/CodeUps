@@ -8,12 +8,12 @@
   line-height: 1;
   text-align: center;
   @include mq("md") {
-    margin-top: rem(155);
+    margin-top: rem(147);
   }
 }
 
 .sub-thanks__text {
-  margin-top: rem(57);
+  margin-top: rem(37);
   line-height: 1.5;
   @include mq("md") {
     margin-top: rem(40);

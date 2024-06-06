@@ -13,17 +13,17 @@
   font-weight: $medium;
   line-height: 1;
   color: $dark-green;
-  padding-bottom: rem(4);
+  padding-bottom: rem(9);
   border-bottom: 1px solid $green;
   margin-top: rem(8);
 }
 
 .sub-blog-detail__img {
-  //   max-width: rem(345);
-  min-width: 100%;
+  max-width: rem(345);
   width: 100%;
   margin-top: rem(24);
   @include mq("md") {
+    max-width: rem(700);
     margin-top: rem(40);
   }
 }
@@ -32,6 +32,9 @@
   width: 100%;
   object-fit: cover;
   aspect-ratio: 345 / 231;
+  @include mq("md") {
+    aspect-ratio: 700 / 468;
+  }
 }
 
 .sub-blog-detail__text {
@@ -54,6 +57,10 @@
   font-size: rem(16);
   color: $black;
   line-height: 1.5;
+}
+
+.sub-blog-detail__item:not(:first-child) {
+  margin-top: rem(4);
 }
 
 .sub-blog-detail__item::before {

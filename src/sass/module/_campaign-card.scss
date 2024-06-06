@@ -13,7 +13,10 @@
   }
 }
 
-.campaign-card--large {
+.campaign-card.campaign-card--aside {
+  max-width: rem(294);
+}
+.campaign-card.campaign-card--large {
   @include mq("md") {
     max-width: 100%;
   }
@@ -30,10 +33,6 @@
   @include mq("md") {
     aspect-ratio: 333 / 223;
   }
-}
-
-.campaign-card__img.campaign-card__img--aside img {
-  aspect-ratio: 294 / 188;
 }
 
 .campaign-card__item-body {
