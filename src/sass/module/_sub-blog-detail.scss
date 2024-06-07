@@ -16,6 +16,9 @@
   padding-bottom: rem(9);
   border-bottom: 1px solid $green;
   margin-top: rem(8);
+  @include mq("md") {
+    font-size: rem(32);
+  }
 }
 
 .sub-blog-detail__img {
@@ -75,8 +78,11 @@
 }
 
 .sub-blog-detail__pagenavi {
-  text-align: center;
   margin-top: rem(40);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(81);
+  }
 }
 
 .sub-blog-detail__pagenavi-inner {

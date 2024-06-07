@@ -10,7 +10,19 @@
   }
 }
 
+.layout-footer.layout-footer--blog {
+  @include mq("md") {
+    margin-top: rem(142);
+  }
+}
+
 .layout-footer.layout-footer--about-us {
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}
+
+.layout-footer.layout-footer--voice {
   @include mq("md") {
     margin-top: rem(150);
   }

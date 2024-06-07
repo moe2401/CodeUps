@@ -14,10 +14,23 @@
   }
 }
 
-.layout-contact.layout-contact--campagin {
+.layout-contact.layout-contact--campaign {
   margin-top: rem(104);
   @include mq("md") {
     margin-top: rem(140);
+  }
+}
+
+.layout-contact.layout-contact--blog {
+  @include mq("md") {
+    margin-top: rem(146);
+  }
+}
+
+.layout-contact.layout-contact--voice {
+  margin-top: rem(105);
+  @include mq("md") {
+    margin-top: rem(139);
   }
 }
 

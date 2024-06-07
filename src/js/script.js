@@ -168,32 +168,38 @@ jQuery(function ($) {
     });
   });
 
-  // モーダルウィンドウ
+  // // モーダルウィンドウ
+  // JavaScript (jQuery)
   $(document).ready(function () {
-    $(".js-modal-open").click(function (e) {
-      e.preventDefault(); // リンクのデフォルトの動作をキャンセル
+    const $modalContent = $(".modal .bigimg");
 
-      var imgSrc = $(this).find("img").attr("src");
-      var imgAlt = $(this).find("img").attr("alt");
-
-      $(".bigimg img").attr("src", imgSrc);
-      $(".bigimg img").attr("alt", imgAlt);
-
+    function showModal(imgSrc, imgAlt) {
+      $modalContent.html(`<img src="${imgSrc}" alt="${imgAlt}" />`);
       $(".modal").fadeIn();
-      $("body").addClass("no-scroll"); // スクロールを無効化
+      $("body").addClass("no-scroll");
+    }
+
+    $(".js-modal-open").click(function (e) {
+      e.preventDefault();
+
+      var $img = $(this).find("img");
+      var imgSrc = $img.attr("src");
+      var imgAlt = $img.attr("alt");
+
+      showModal(imgSrc, imgAlt);
     });
 
-    $(".modal").click(function () {
-      $(this).fadeOut();
-      $("body").removeClass("no-scroll"); // スクロールを有効化
+    $(".modal").click(function (e) {
+      // クリックされた要素が.bigimg内のimg要素でない場合のみモーダルを閉じる
+      if ($(e.target).closest(".bigimg img").length) {
+        $(this).fadeOut(() => {
+          // フェードアウト完了後に中身をクリア
+          $modalContent.empty();
+        });
+        $("body").removeClass("no-scroll");
+      }
     });
   });
-
-  // $('.close-btn').click(function() {
-  //     $('.modal').fadeOut();
-  //     $('body,html').css('overflow-y', 'visible');
-  //     return false
-  //   });
 
   //タブ切り替え
   $(function () {

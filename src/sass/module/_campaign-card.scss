@@ -17,6 +17,7 @@
   max-width: rem(294);
 }
 .campaign-card.campaign-card--large {
+  max-width: rem(294);
   @include mq("md") {
     max-width: 100%;
   }
@@ -46,7 +47,10 @@
 }
 
 .campaign-card__item-body.campaign-card__item-body--aside {
-  padding: rem(16) rem(23) rem(24) rem(23);
+  padding: rem(16) rem(23) rem(27) rem(23);
+  @include mq("md") {
+    padding: rem(16) rem(23) rem(16) rem(23);
+  }
 }
 
 .campaign-card__meta {
@@ -85,6 +89,7 @@
 
 .campaign-card__category.campaign-card__category--center {
   text-align: center;
+  margin-top: rem(-7);
 }
 
 .campaign-card__category--large {
@@ -127,6 +132,10 @@
   font-weight: $bold;
   line-height: 1;
   color: $dark-green;
+}
+
+.campaign-card__price-discount.campaign-card__price-discount--small {
+  font-size: rem(32);
 }
 
 .campaign-card__price {

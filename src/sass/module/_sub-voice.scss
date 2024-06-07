@@ -12,8 +12,8 @@
 }
 
 .sub-voice__pagenavi {
-  margin-top: rem(80);
+  margin-top: rem(84);
   @include mq("md") {
-    margin-top: rem(72);
+    margin-top: rem(56);
   }
 }
