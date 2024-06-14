@@ -7,10 +7,10 @@
 .error__inner {
   position: relative;
   padding-bottom: rem(27);
-  padding-top: rem(90);
+  padding-top: rem(37);
   @include mq("md") {
     padding-bottom: rem(148);
-    // padding-top: rem(90);
+    padding-top: rem(90);
   }
 }
 
@@ -22,6 +22,7 @@
   background-size: contain;
   width: rem(345);
   height: rem(345);
+  top: rem(-30);
   @include mq("md") {
     width: rem(698);
     height: rem(698);
@@ -30,9 +31,9 @@
 
 .error__content {
   text-align: center;
-  margin-top: rem(39);
+  // margin-top: rem(39);
   @include mq("md") {
-    margin-top: rem(101);
+    // margin-top: rem(101);
   }
 }
 
@@ -49,7 +50,7 @@
 }
 
 .error__text-wrap {
-  margin-top: rem(-10);
+  margin-top: rem(-16);
   @include mq("md") {
     margin-top: rem(0);
   }
@@ -63,7 +64,7 @@
 }
 
 .error__button {
-  margin-top: rem(29);
+  margin-top: rem(33);
   @include mq("md") {
     margin-top: rem(80);
   }

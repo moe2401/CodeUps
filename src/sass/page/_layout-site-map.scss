@@ -1,8 +1,8 @@
 @use "global" as *;
 
-.layout-sub-contact {
+.layout-site-map {
   margin-top: rem(45);
   @include mq("md") {
-    margin-top: rem(146);
+    margin-top: rem(152);
   }
 }

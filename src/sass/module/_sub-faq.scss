@@ -1,8 +1,8 @@
 @use "global" as *;
 
-.sub-faq__content {
-  margin-top: rem(48);
+.sub-faq__inner.inner {
   @include mq("md") {
-    margin-top: rem(150);
+    max-width: rem(750);
+    width: 100%;
   }
 }

@@ -24,7 +24,7 @@
   color: $green;
   border: 1px solid $green;
   transition: 0.3s;
-  // margin-left: rem(12);
+  cursor: pointer;
 }
 
 .wp-pagenavi a:hover {
@@ -38,6 +38,13 @@
 
 .wp-pagenavi a:nth-child(2) {
   margin-left: rem(40);
+  color: $white;
+  background-color: $green;
+}
+
+.wp-pagenavi.wp-pagenavi--detail a:nth-child(2) {
+  background-color: $white;
+  color: $green;
 }
 
 .wp-pagenavi a:last-child {

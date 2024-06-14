@@ -1,11 +1,9 @@
 @use "global" as *;
 
 .faq__inner {
-  max-width: rem(345);
   width: 100%;
   margin: auto;
   @include mq("md") {
-    max-width: rem(700);
   }
 }
 
@@ -34,6 +32,7 @@
   background-color: $green;
   color: $white;
   font-size: rem(16);
+  cursor: pointer;
   padding: rem(16) rem(0) rem(16) rem(16);
   @include mq("md") {
     padding: rem(26) rem(0) rem(25) rem(40);
@@ -68,7 +67,6 @@
 
 .faq-list__item-answer {
   font-size: rem(16);
-  display: none;
   padding: rem(19) rem(16);
   background-color: $white;
   color: $dark-green;

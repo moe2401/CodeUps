@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.sub-information__contents {
+.sub-information__inner {
   margin-top: rem(116);
 
   @include mq("md") {

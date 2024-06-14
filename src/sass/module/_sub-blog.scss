@@ -59,19 +59,20 @@
   background-color: $green;
   width: rem(8);
   height: rem(50);
-  margin-right: rem(16); /* 間隔を調整 */
+  margin-right: rem(16);
 }
 
-.sub-blog__head span {
+.sub-blog__head-title {
   color: $dark-green;
   font-size: rem(24);
   font-family: $font-family-jp;
   line-height: 1;
   display: flex;
   align-items: center;
+  font-weight: normal;
 }
 
-.sub-blog__head span::before {
+.sub-blog__head-title::before {
   content: "";
   background-image: url(../images/sub/whale-black.png);
   background-repeat: no-repeat;
@@ -97,6 +98,11 @@
   margin-top: rem(40);
 }
 
+.sub-blog__button {
+  text-align: center;
+  margin-top: rem(40);
+}
+
 .sub-blog__archive-details {
   margin-top: rem(25);
   @include mq("md") {
@@ -115,19 +121,23 @@
   color: $green;
 }
 
-.sub-blog__archive-summary::marker {
-  font-size: rem(28);
+.sub-blog__archive-lists {
+  display: none;
+}
+
+.sub-blog__archive-lists.is-open {
+  display: block;
 }
 
 .sub-blog__archive-item {
   margin-left: rem(30);
-  // margin-top: rem(4);
 }
 
 .sub-blog__archive-item:not(:first-child) {
   margin-top: rem(4);
 }
 
+.sub-blog__archive-summary::before,
 .sub-blog__archive-item::before {
   display: inline-block;
   content: "";
@@ -139,4 +149,8 @@
   border-left: 17px solid #408f95;
   border-right: 0;
   margin-right: rem(8);
+}
+
+.sub-blog__archive-item a {
+  cursor: pointer;
 }

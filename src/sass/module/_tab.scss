@@ -25,6 +25,11 @@
   text-align: center;
 }
 
+.tab__menu-item:first-child {
+  color: $white;
+  background-color: $green;
+}
+
 .tab__menu-item:hover {
   color: $white;
   background-color: $green;

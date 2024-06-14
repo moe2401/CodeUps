@@ -2,6 +2,11 @@
 
 .breadcrumb.breadcrumb--white {
   color: $white;
+  background-color: $green;
+  padding-top: rem(88);
+  @include mq("md") {
+    padding-top: rem(98);
+  }
 }
 
 .breadcrumb__inner span {

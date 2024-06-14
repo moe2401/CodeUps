@@ -169,7 +169,6 @@ jQuery(function ($) {
   });
 
   // // モーダルウィンドウ
-  // JavaScript (jQuery)
   $(document).ready(function () {
     const $modalContent = $(".modal .bigimg");
 
@@ -190,8 +189,11 @@ jQuery(function ($) {
     });
 
     $(".modal").click(function (e) {
-      // クリックされた要素が.bigimg内のimg要素でない場合のみモーダルを閉じる
-      if ($(e.target).closest(".bigimg img").length) {
+      // モーダルの背景または画像がクリックされたかをチェック
+      if (
+        $(e.target).is(".modal") ||
+        $(e.target).closest(".modal .bigimg img").length
+      ) {
         $(this).fadeOut(() => {
           // フェードアウト完了後に中身をクリア
           $modalContent.empty();
@@ -214,33 +216,55 @@ jQuery(function ($) {
       var number = $(this).data("number");
       $("#" + number).addClass("is-tab");
 
+      // SVGアイコンの色を変更する処理
+      document.querySelectorAll(".tab-info__menu-item").forEach((item) => {
+        item.addEventListener("click", function () {
+          const imgElement = this.querySelector("img");
+          const isActive = imgElement.dataset.active === "true"; // アクティブ状態を追跡するためのデータ属性
+
+          // 他のすべてのアイテムをデフォルトのアイコンに戻す
+          document
+            .querySelectorAll(".tab-info__menu-item img")
+            .forEach((img) => {
+              img.src = img.getAttribute("data-image-default");
+              img.dataset.active = "false"; // アクティブ状態をリセット
+            });
+
+          // 現在のアイテムの画像を切り替える
+          if (!isActive) {
+            imgElement.src = imgElement.getAttribute("data-image-active");
+            imgElement.dataset.active = "true"; // アクティブ状態を設定
+          } else {
+            imgElement.src = imgElement.getAttribute("data-image-default");
+            imgElement.dataset.active = "false";
+          }
+        });
+      });
       // 他のタブのアイコン画像を緑に変更する
-      $(".js-tab-info-menu")
-        .not(this)
-        .find(".tab-info__img img")
-        .attr("src", "./assets/images/sub/whale-green.png");
+      //   $(".js-tab-info-menu")
+      //     .not(this)
+      //     .find(".tab-info__img img")
+      //     .attr("src", "./assets/images/sub/whale-green.svg");
 
-      // クリックされたタブのアイコン画像を緑に変更する
-      $(this)
-        .find(".tab-info__img img")
-        .attr("src", "./assets/images/sub/whale-green.png");
+      //   // クリックされたタブのアイコン画像を緑に変更する
+      //   $(this)
+      //     .find(".tab-info__img img")
+      //     .attr("src", "./assets/images/sub/whale-white.svg");
 
-      // クリックされたタブに関連付けられた画像パスを取得し、画像のsrc属性を変更する
-      var defaultImage = $(this).data("image-default");
-      $(this).find(".tab-info__img img").attr("src", defaultImage);
+      //   // クリックされたタブに関連付けられた画像パスを取得し、画像のsrc属性を変更する
+      //   var defaultImage = $(this).data("image-default");
+      //   $(this).find(".tab-info__img img").attr("src", defaultImage);
 
-      // タブをクリックしたときに画像が緑→白に変更
-      $(".js-tab-info-menu.is-tab")
-        .find(".tab-info__img img")
-        .attr("src", "./assets/images/sub/whale-white.png");
+      //   // タブをクリックしたときに画像が緑→白に変更
+      //   $(".js-tab-info-menu.is-tab")
+      //     .find(".tab-info__img img")
+      //     .attr("src", "./assets/images/sub/whale-white.png");
     });
   });
 
-  //FAQ
-  jQuery(function ($) {
-    $(".js-faq-question").on("click", function () {
-      $(this).next().slideToggle();
-      $(this).toggleClass("is-open");
-    });
+  //archive アーカイブ
+  $(".js-drawer-accordion").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("is-open");
   });
 });

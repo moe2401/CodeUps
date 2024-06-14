@@ -1,18 +1,13 @@
 @use "global" as *;
 
-.sub-contact__inner {
-  // @include mq("md") {
-  //   max-width: rem(700);
-  //   margin: auto;
-  //   width: 100%;
-  // }
+.sub-contact__inner.inner {
+  @include mq("md") {
+    max-width: rem(750);
+  }
 }
 
 .sub-contact__form {
-  margin-top: rem(45);
   @include mq("md") {
-    margin-top: rem(146);
-    max-width: rem(700);
     margin-right: auto;
     margin-left: auto;
     width: 100%;

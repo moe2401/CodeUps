@@ -56,10 +56,12 @@
 }
 
 .sub-blog-detail__item {
+  position: relative;
   font-family: $font-family-jp;
   font-size: rem(16);
   color: $black;
   line-height: 1.5;
+  padding-left: rem(24);
 }
 
 .sub-blog-detail__item:not(:first-child) {
@@ -67,6 +69,8 @@
 }
 
 .sub-blog-detail__item::before {
+  position: absolute;
+  left: 0;
   content: "";
   background-image: url(../images/sub/star-fish-green.png);
   background-repeat: no-repeat;

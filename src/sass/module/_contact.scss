@@ -141,9 +141,9 @@
   text-align: center;
 }
 
-.contact__button.contact__button--subContact {
-  margin-top: rem(33);
-}
+// .contact__button.contact__button--subContact {
+//   margin-top: rem(33);
+// }
 
 .contact__button.contact__button--margin {
   @include mq("md") {

@@ -207,3 +207,8 @@
 .contact-form__privacy-label input:checked + span::after {
   opacity: 1;
 }
+
+.contact-form__button {
+  margin-top: rem(33);
+  text-align: center;
+}

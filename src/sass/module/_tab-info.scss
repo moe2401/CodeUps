@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.tab-info {
-}
-
 .tab-info__menu {
   display: flex;
   justify-content: center;
@@ -31,6 +28,11 @@
     font-size: rem(24);
     text-align: right;
   }
+}
+
+.tab-info__menu-item:first-child {
+  color: $white;
+  background-color: $green;
 }
 
 .tab-info__menu-item:not(:first-child) {
