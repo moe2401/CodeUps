@@ -7,10 +7,5 @@
 }
 
 .sub-price__table {
-  // max-width: rem(345);
   width: 100%;
-
-  @include mq("md") {
-    // max-width: rem(700);
-  }
 }

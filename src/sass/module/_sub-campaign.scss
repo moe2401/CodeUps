@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.sub-campaign__inner {
-}
-
-.sub-campaign__tab {
-}
-
 .sub-campaign__cards {
   @include mq("md") {
     display: grid;

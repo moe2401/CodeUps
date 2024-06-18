@@ -31,10 +31,6 @@
 
 .error__content {
   text-align: center;
-  // margin-top: rem(39);
-  @include mq("md") {
-    // margin-top: rem(101);
-  }
 }
 
 .error__title {
@@ -44,6 +40,8 @@
   letter-spacing: 0.5em;
   text-indent: 0.5em;
   font-weight: normal;
+  position: relative;
+  z-index: 1;
   @include mq("md") {
     font-size: rem(160);
   }
