@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.sub-about-us__inner {
-  margin-top: rem(52);
-  @include mq("md") {
-    margin-top: rem(222);
-  }
-}
-
 .sub-about-us__wrapper {
   position: relative;
 }

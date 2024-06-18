@@ -30,11 +30,6 @@
   }
 }
 
-.tab-info__menu-item:first-child {
-  color: $white;
-  background-color: $green;
-}
-
 .tab-info__menu-item:not(:first-child) {
   margin-left: rem(19);
 
@@ -43,22 +38,131 @@
   }
 }
 
-.tab-info__menu-item.is-tab {
+.tab-info__menu-item.current {
   color: $white;
   background-color: $green;
 }
 
-.tab-info__img {
-  max-width: rem(64);
-  max-height: rem(64);
-  width: 100%;
-  height: 100%;
+.tab-info__menu-item:hover {
+  color: $white;
+  background-color: $green;
 }
 
-.tab-info__img img {
-  width: 100%;
-  object-fit: cover;
-  aspect-ratio: 64 / 64;
+.tab-info__menu-item span {
+  align-items: center;
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.tab-info__menu-item:nth-child(1)span::before {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/sub/whale-green.svg);
+    width: rem(64);
+    height: rem(64);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: rem(8);
+  }
+}
+
+.tab-info__menu-item:nth-child(2)span::before {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/sub/shark-green.svg);
+    width: rem(64);
+    height: rem(64);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: rem(8);
+  }
+}
+
+.tab-info__menu-item:nth-child(3)span::before {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/sub/fish-green.svg);
+    width: rem(64);
+    height: rem(64);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: rem(8);
+  }
+}
+
+//hoverした時
+.tab-info__menu-item:hover span::before {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/sub/whale-white.svg);
+    width: rem(64);
+    height: rem(64);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: rem(8);
+  }
+}
+
+.tab-info__menu-item:nth-child(2):hover span::before {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/sub/shark-white.svg);
+    width: rem(64);
+    height: rem(64);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: rem(8);
+  }
+}
+
+.tab-info__menu-item:nth-child(3):hover span::before {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/sub/fish-white.svg);
+    width: rem(64);
+    height: rem(64);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: rem(8);
+  }
+}
+
+//クリック後
+.tab-info__menu-item.current span::before {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/sub/whale-white.svg);
+    width: rem(64);
+    height: rem(64);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: rem(8);
+  }
+}
+
+.tab-info__menu-item.current:nth-child(2)span::before {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/sub/shark-white.svg);
+    width: rem(64);
+    height: rem(64);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: rem(8);
+  }
+}
+
+.tab-info__menu-item.current:nth-child(3)span::before {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/sub/fish-white.svg);
+    width: rem(64);
+    height: rem(64);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: rem(8);
+  }
 }
 
 .tab-info__content {
@@ -69,6 +173,6 @@
   display: none;
 }
 
-.tab-info__content-item.is-tab {
+.tab-info__content-item.current {
   display: block;
 }

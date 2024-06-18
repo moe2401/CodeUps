@@ -203,68 +203,74 @@ jQuery(function ($) {
     });
   });
 
-  //タブ切り替え
+  //informationタブ切り替え
+// 指定された要素への滑らかなスクロールアニメーション
+// function scrollToElement(selector) {
+//   var element = $(selector);
+//   if (element.length) {
+//     $("html, body").animate({
+//       scrollTop: element.offset().top
+//     }, 100);
+//   }
+// }
+
+
+
   $(function () {
+    // URLに#tabが含まれている場合、対応するタブをアクティブにする
+    if (location.hash) {
+      $(".js-tab-info-menu").removeClass("current");
+      var hash = location.hash;
+      $(".js-tab-info-content").hide();
+      $(hash).css("display", "flex");
+      $(
+        '.js-tab-info-menu[data-number="' + hash.replace("#", "") + '"]'
+      ).addClass("current");
+    } else {
+      // 初期状態で最初のタブコンテンツを表示
+      $(".js-tab-info-content:first-of-type").css("display", "flex");
+    }
+  
+    // タブメニューがクリックされたときの処理
     $(".js-tab-info-menu").on("click", function () {
       // 他のタブメニューアイテムの選択状態を解除
-      $(".js-tab-info-menu").removeClass("is-tab");
-      // 他のタブコンテンツアイテムを非表示
-      $(".js-tab-info-content").removeClass("is-tab");
+      $(".js-tab-info-menu").removeClass("current");
       // クリックされたタブメニューアイテムを選択状態に
-      $(this).addClass("is-tab");
-      // 対応するタブコンテンツアイテムを表示
-      var number = $(this).data("number");
-      $("#" + number).addClass("is-tab");
-
-      // SVGアイコンの色を変更する処理
-      document.querySelectorAll(".tab-info__menu-item").forEach((item) => {
-        item.addEventListener("click", function () {
-          const imgElement = this.querySelector("img");
-          const isActive = imgElement.dataset.active === "true"; // アクティブ状態を追跡するためのデータ属性
-
-          // 他のすべてのアイテムをデフォルトのアイコンに戻す
-          document
-            .querySelectorAll(".tab-info__menu-item img")
-            .forEach((img) => {
-              img.src = img.getAttribute("data-image-default");
-              img.dataset.active = "false"; // アクティブ状態をリセット
-            });
-
-          // 現在のアイテムの画像を切り替える
-          if (!isActive) {
-            imgElement.src = imgElement.getAttribute("data-image-active");
-            imgElement.dataset.active = "true"; // アクティブ状態を設定
-          } else {
-            imgElement.src = imgElement.getAttribute("data-image-default");
-            imgElement.dataset.active = "false";
-          }
-        });
-      });
-      // 他のタブのアイコン画像を緑に変更する
-      //   $(".js-tab-info-menu")
-      //     .not(this)
-      //     .find(".tab-info__img img")
-      //     .attr("src", "./assets/images/sub/whale-green.svg");
-
-      //   // クリックされたタブのアイコン画像を緑に変更する
-      //   $(this)
-      //     .find(".tab-info__img img")
-      //     .attr("src", "./assets/images/sub/whale-white.svg");
-
-      //   // クリックされたタブに関連付けられた画像パスを取得し、画像のsrc属性を変更する
-      //   var defaultImage = $(this).data("image-default");
-      //   $(this).find(".tab-info__img img").attr("src", defaultImage);
-
-      //   // タブをクリックしたときに画像が緑→白に変更
-      //   $(".js-tab-info-menu.is-tab")
-      //     .find(".tab-info__img img")
-      //     .attr("src", "./assets/images/sub/whale-white.png");
+      $(this).addClass("current");
+      // すべてのタブコンテンツを非表示
+      $(".js-tab-info-content").hide();
+      // 対応するタブコンテンツを表示
+      var dataNumber = $(this).attr("data-number");
+      $("#" + dataNumber).fadeIn(400);
     });
-  });
+  
+    var hash = window.location.hash;
+    if (hash) {
+      $(".js-tab-info-content").hide();
+      $(hash).show();
+      $(
+        '.js-tab-info-menu[data-number="' + hash.replace("#", "") + '"]'
+      ).addClass("current");
+    }
+  
+    // クエリパラメーターでタブを指定する場合の処理
+    $('a[href*="information.html?id="]').on('click', function(e) {
+      var targetId = $(this).attr('href').split('=')[1];
+      var targetTab = $('#tab' + targetId);
+    
+      $('.js-tab-info-menu').removeClass('current');
+      $('.js-tab-info-menu[data-number="tab' + targetId + '"]').addClass('current');
+    
+      $('.js-tab-info-content').hide();
+      targetTab.fadeIn(400);
+    });
+  
+});
+
 
   //archive アーカイブ
   $(".js-drawer-accordion").on("click", function () {
-    $(this).next().slideToggle();
+    $(this).next().slideToggle(500);
     $(this).toggleClass("is-open");
   });
 });

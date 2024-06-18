@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.sub-voice__tab {
-  margin-top: rem(48);
-  @include mq("md") {
-    margin-top: rem(148);
-  }
-}
-
 .sub-voice__content {
   margin-top: rem(40);
 }

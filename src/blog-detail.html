@@ -136,13 +136,13 @@
                   </div>
                   <ul class="nav-contents__items">
                     <li class="nav-contents__item">
-                      <a href="#">ライセンス講習</a>
+                      <a href="./price.html">ライセンス講習</a>
                     </li>
                     <li class="nav-contents__item">
-                      <a href="#">体験ダイビング</a>
+                      <a href="./price.html">体験ダイビング</a>
                     </li>
                     <li class="nav-contents__item">
-                      <a href="#">ファンダイビング</a>
+                      <a href="./price.html">ファンダイビング</a>
                     </li>
                   </ul>
                 </li>
@@ -156,18 +156,18 @@
                   <div>
                     <ul class="nav-contents__items">
                       <li class="nav-contents__item">
-                        <a href="#">ライセンス講習</a>
+                        <a href="information.html?id=tab01#tab01">ライセンス講習</a>
                       </li>
                       <li class="nav-contents__item">
-                        <a href="#">体験ダイビング</a>
+                        <a href="information.html?id=tab03#tab03">体験ダイビング</a>
                       </li>
                       <li class="nav-contents__item">
-                        <a href="#">ファンダイビング</a>
+                        <a href="information.html?id=tab02#tab02">ファンダイビング</a>
                       </li>
                     </ul>
                   </div>
                   <div class="nav-contents__title">
-                    <a href="#">ブログ</a>
+                    <a href="./blog.html">ブログ</a>
                   </div>
                 </li>
               </ul>
@@ -218,28 +218,28 @@
         </div>
       </section>
 
-      <div class="sub-blog layout-sub-blog decoration">
-        <div class="sub-blog__inner sub-blog__inner--padding inner">
-          <div class="sub-blog__breadcrumb breadcrumb">
-            <div class="breadcrumb__inner">
-              <!-- Breadcrumb NavXTで出力される部分 ここから -->
-              <span>
-                <a href="./index.html">
-                  <span>TOP</span>
-                </a>
-              </span>
-              &nbsp;&gt;&nbsp;
-              <span>
-                <span class="breadcrumb__current-item">ブログ一覧</span>
-              </span>
-              &nbsp;&gt;&nbsp;
-              <span>
-                <span class="breadcrumb__current-item">ブログ詳細</span>
-              </span>
-              <!-- Breadcrumb NavXTで出力される部分 ここまで -->
-            </div>
-          </div>
+      <div class="breadcrumb layout-breadcrumb decoration">
+        <div class="breadcrumb__inner inner">
+          <!-- Breadcrumb NavXTで出力される部分 ここから -->
+          <span>
+            <a href="./index.html">
+              <span>TOP</span>
+            </a>
+          </span>
+          &nbsp;&gt;&nbsp;
+          <span>
+            <span class="breadcrumb__current-item">ブログ一覧</span>
+          </span>
+          &nbsp;&gt;&nbsp;
+          <span>
+            <span class="breadcrumb__current-item">ブログ詳細</span>
+          </span>
+          <!-- Breadcrumb NavXTで出力される部分 ここまで -->
+        </div>
+      </div>
 
+      <section class="sub-blog layout-sub-blog">
+        <div class="sub-blog__inner sub-blog__inner--padding inner">
           <div class="sub-blog__content">
             <div class="sub-blog__main sub-blog-detail">
               <div class="sub-blog-detail__detail">
@@ -254,33 +254,33 @@
                   />
                 </div>
 
-                <p class="sub-blog-detail__text">
+                <p>
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                 </p>
 
-                <div class="sub-blog-detail__img">
+                <figure>
                   <img
                     src="./assets/images/common/blog_1.jpg"
                     alt="ピンクのサンゴ礁の写真"
                   />
-                </div>
-                <p class="sub-blog-detail__text">
+                </figure>
+                <p>
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                 </p>
 
-                <ul class="sub-blog-detail__lists">
-                  <li class="sub-blog-detail__item">リスト１</li>
-                  <li class="sub-blog-detail__item">リスト2</li>
-                  <li class="sub-blog-detail__item">リスト3</li>
+                <ul>
+                  <li>リスト１</li>
+                  <li>リスト2</li>
+                  <li>リスト3</li>
                 </ul>
 
-                <p class="sub-blog-detail__text">
+                <p>
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                 </p>
               </div>
 
               <div class="sub-blog-detail__pagenavi pagenavi">
-                <div class="pagenavi__inner pagenavi__inner--detail">
+                <div class="pagenavi__inner">
                   <!-- WP-PageNaviで出力される部分 ここから -->
                   <div
                     class="wp-pagenavi wp-pagenavi--detail"
@@ -289,7 +289,10 @@
                     <a class="previouspostslink" rel="prev" href="#"
                       ><span></span
                     ></a>
-                    <a class="nextpostslink" rel="next" href="#"
+                    <a
+                      class="nextpostslink nextpostslink--detail"
+                      rel="next"
+                      href="#"
                       ><span></span
                     ></a>
                   </div>
@@ -499,8 +502,9 @@
                     <h2 class="sub-blog__head-title">アーカイブ</h2>
                   </div>
 
-                  <details class="sub-blog__archive-details">
-                    <summary class="sub-blog__archive-summary">2023</summary>
+                  <div class="sub-blog__archive-details">
+                    <p class="sub-blog__archive-summary js-drawer-accordion">2023
+                    </p>
                     <ul class="sub-blog__archive-lists">
                       <li class="sub-blog__archive-item">
                         <a href="#">3月</a>
@@ -512,16 +516,16 @@
                         <a href="#">1月</a>
                       </li>
                     </ul>
-                  </details>
-                  <details class="sub-blog__archive-details">
-                    <summary class="sub-blog__archive-summary">2022</summary>
-                  </details>
+                  </div>
+                  <div class="sub-blog__archive-details">
+                    <p class="sub-blog__archive-summary">2022</p>
+                  </div>
                 </div>
               </div>
             </aside>
           </div>
         </div>
-      </div>
+      </section>
 
       <section class="contact layout-contact layout-contact--blog">
         <div class="contact__inner inner">
@@ -635,13 +639,13 @@
                 </div>
                 <ul class="nav-contents__items">
                   <li class="nav-contents__item">
-                    <a href="#">ライセンス講習</a>
+                    <a href="./price.html">ライセンス講習</a>
                   </li>
                   <li class="nav-contents__item">
-                    <a href="#">体験ダイビング</a>
+                    <a href="./price.html">体験ダイビング</a>
                   </li>
                   <li class="nav-contents__item">
-                    <a href="#">ファンダイビング</a>
+                    <a href="./price.html">ファンダイビング</a>
                   </li>
                 </ul>
               </li>
@@ -655,13 +659,13 @@
                 <div>
                   <ul class="nav-contents__items">
                     <li class="nav-contents__item">
-                      <a href="#">ライセンス講習</a>
+                      <a href="information.html?id=tab01#tab01">ライセンス講習</a>
                     </li>
                     <li class="nav-contents__item">
-                      <a href="#">体験ダイビング</a>
+                      <a href="information.html?id=tab03#tab03">体験ダイビング</a>
                     </li>
                     <li class="nav-contents__item">
-                      <a href="#">ファンダイビング</a>
+                      <a href="information.html?id=tab02#tab02">ファンダイビング</a>
                     </li>
                   </ul>
                 </div>
