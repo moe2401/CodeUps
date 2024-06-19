@@ -57,13 +57,13 @@
   }
 }
 
-.faq-list__item-question::after {
-  transform: rotate(90deg);
-}
+// .faq-list__item-question::after {
+//   // transform: rotate(90deg);
+// }
 
-.faq-list__item-question.is-open::after {
-  transform: rotate(0deg);
-}
+// .faq-list__item-question.is-open::after {
+//   transform: rotate(0deg);
+// }
 
 .faq-list__item-answer {
   font-size: rem(16);
