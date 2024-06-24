@@ -20,7 +20,7 @@
 
 
 .pagenavi .wp-pagenavi a {
-  padding: rem(9) rem(14);
+  padding: rem(0) rem(3);
   line-height: 1;
   width: rem(38);
   height: rem(38);
@@ -29,7 +29,9 @@
   border: 1px solid $green;
   transition: 0.3s;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: rem(0);
   @include mq("md") {
     margin-left: rem(12);
@@ -41,12 +43,14 @@
 .pagenavi .wp-pagenavi .u-desktop {
   display: none;
   @include mq("md") {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .pagenavi .wp-pagenavi .current {
-  padding: rem(9) rem(14);
+  padding: rem(9) rem(3);
   line-height: 1;
   width: rem(38);
   height: rem(38);
@@ -71,21 +75,9 @@
   display: block;
   width: 11.6px;
   height: 22.2px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.pagenavi .wp-pagenavi .previouspostslink span,
-.pagenavi .wp-pagenavi .nextpostslink span {
-  position: relative;
-  display: block;
-  width: 11.6px;
-  height: 22.2px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 .pagenavi .wp-pagenavi .previouspostslink span::before,
 .pagenavi .wp-pagenavi .previouspostslink span::after,

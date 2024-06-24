@@ -41,17 +41,14 @@
   text-indent: 0.5em;
   font-weight: normal;
   position: relative;
-  z-index: 1;
   @include mq("md") {
     font-size: rem(160);
   }
 }
 
 .error__text-wrap {
-  margin-top: rem(-16);
-  @include mq("md") {
-    margin-top: rem(0);
-  }
+  position: relative;
+  z-index: 1;
 }
 
 .error__text {

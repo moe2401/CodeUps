@@ -3,16 +3,10 @@
 .voice-cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: rem(40);
+  gap: rem(34) rem(40);
   @include mq("md") {
     grid-template-columns: repeat(2, 1fr);
+    gap: rem(80) rem(40);
   }
 }
 
-.voice-cards.voice-cards--gap {
-  row-gap: rem(34);
-
-  @include mq("md") {
-    row-gap: rem(80);
-  }
-}

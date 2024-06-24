@@ -264,13 +264,23 @@ jQuery(function ($) {
       $('.js-tab-info-content').hide();
       targetTab.fadeIn(400);
     });
-  
+    
 });
+
+
 
 
   //archive アーカイブ
   $(".js-drawer-accordion").on("click", function () {
     $(this).next().slideToggle(500);
     $(this).toggleClass("is-open");
+  });
+});
+
+//FAQ
+jQuery(function ($) {
+  $('.js-faq-question').on('click', function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass('is-open');
   });
 });

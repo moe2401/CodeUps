@@ -121,9 +121,6 @@
   margin-top: rem(4);
 }
 
-.sub-blog__archive-summary {
-}
-
 .sub-blog__archive-summary::before,
 .sub-blog__archive-item::before {
   display: inline-block;
@@ -145,3 +142,8 @@
 .sub-blog__archive-item a {
   cursor: pointer;
 }
+
+.sub-blog__archive-item a:hover {
+  opacity: .7;
+}
+

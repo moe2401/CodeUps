@@ -33,10 +33,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .bigimg img {
-  max-height: 70vh;
+  max-height: 86vh;
   max-width: 100%;
 }
 

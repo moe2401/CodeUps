@@ -32,7 +32,6 @@
 
 .tab-info__menu-item:not(:first-child) {
   margin-left: rem(19);
-
   @include mq("md") {
     margin-left: rem(90);
   }
@@ -44,6 +43,7 @@
 }
 
 .tab-info__menu-item:hover {
+  transition: .3s;
   color: $white;
   background-color: $green;
 }
@@ -170,6 +170,7 @@
 }
 
 .tab-info__content-item {
+  scroll-margin-top: rem(500);
   display: none;
 }
 
