@@ -48,7 +48,7 @@
 }
 
 
-.sub-blog__bottom figure {
+.sub-blog__bottom >* {
   margin-top: rem(24);
   @include mq("md") {
     margin-top: rem(40);
