@@ -1,87 +1,12 @@
 @use "global" as *;
 
 .layout-footer {
-  margin-top: rem(100);
-}
-
-.layout-footer.layout-footer--campaign {
-  @include mq("md") {
-    margin-top: rem(160);
-  }
-}
-
-.layout-footer.layout-footer--blog {
-  @include mq("md") {
-    margin-top: rem(142);
-  }
-}
-
-.layout-footer.layout-footer--about-us {
-  @include mq("md") {
-    margin-top: rem(150);
-  }
-}
-
-.layout-footer.layout-footer--voice {
-  @include mq("md") {
-    margin-top: rem(150);
-  }
-}
-
-.layout-footer.layout-footer--info {
-  @include mq("md") {
-    margin-top: rem(151);
-  }
-}
-
-.layout-footer.layout-footer--subBlog {
+  margin-top: rem(80);
   @include mq("md") {
     margin-top: rem(140);
-  }
-}
-
-.layout-footer.layout-footer--subPrice {
-  @include mq("md") {
-    margin-top: rem(160);
-  }
-}
-
-.layout-footer.layout-footer--faq {
-  @include mq("md") {
-    margin-top: rem(153);
-  }
-}
-
-.layout-footer.layout-footer--contact {
-  margin-top: rem(138);
-  @include mq("md") {
-    margin-top: rem(158);
-  }
-}
-
-.layout-footer.layout-footer--thanks {
-  margin-top: rem(138);
-  @include mq("md") {
-    margin-top: rem(120);
-  }
-}
-
-.layout-footer.layout-footer--privacy-policy {
-  @include mq("md") {
-    margin-top: rem(150);
-  }
-}
-
-.layout-footer.layout-footer--terms-of-service {
-  @include mq("md") {
-    margin-top: rem(149);
-  }
+	}
 }
 
 .layout-footer.layout-footer--404 {
   margin-top: rem(0);
-  padding-top: rem(62);
-  @include mq("md") {
-    padding-top: rem(77);
-  }
 }

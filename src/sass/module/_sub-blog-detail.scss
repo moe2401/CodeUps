@@ -79,6 +79,7 @@
 .sub-blog__bottom li::before {
   position: absolute;
   left: 0;
+  top: rem(4);
   content: "";
   background-image: url(../images/sub/star-fish-green.png);
   background-repeat: no-repeat;

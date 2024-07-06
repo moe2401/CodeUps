@@ -103,7 +103,10 @@
   font-size: rem(24);
   font-family: $font-family-jp;
   color: $green;
+  cursor: pointer;
 }
+
+
 
 .sub-blog__archive-lists {
   display: none;
@@ -122,7 +125,7 @@
 }
 
 .sub-blog__archive-summary::before,
-.sub-blog__archive-item::before {
+.sub-blog__archive-item a::before {
   display: inline-block;
   content: "";
   width: 0;
@@ -137,10 +140,6 @@
 
 .sub-blog__archive-summary.is-open::before {
   transform: rotate(90deg);
-}
-
-.sub-blog__archive-item a {
-  cursor: pointer;
 }
 
 .sub-blog__archive-item a:hover {

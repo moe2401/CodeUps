@@ -22,7 +22,7 @@
 .pagenavi .wp-pagenavi a {
   padding: rem(0) rem(3);
   line-height: 1;
-  width: rem(38);
+  min-width: rem(38);
   height: rem(38);
   background-color: $white;
   color: $green;
@@ -52,7 +52,7 @@
 .pagenavi .wp-pagenavi .current {
   padding: rem(9) rem(3);
   line-height: 1;
-  width: rem(38);
+  min-width: rem(38);
   height: rem(38);
   background-color: $green;
   color: $white;

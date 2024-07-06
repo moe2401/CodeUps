@@ -168,7 +168,7 @@ jQuery(function ($) {
     });
   });
 
-  // // モーダルウィンドウ
+  // モーダルウィンドウ
   $(document).ready(function () {
     const $modalContent = $(".modal .bigimg");
 
@@ -204,86 +204,6 @@ jQuery(function ($) {
   });
 
   //informationタブ切り替え
-// 指定された要素への滑らかなスクロールアニメーション
-// function scrollToElement(selector) {
-//   var element = $(selector);
-//   if (element.length) {
-//     $("html, body").animate({
-//       scrollTop: element.offset().top
-//     }, 100);
-//   }
-// }
-
-
-
-//   $(function () {
-//     // URLに#tabが含まれている場合、対応するタブをアクティブにする
-//     if (location.hash) {
-//       $(".js-tab-info-menu").removeClass("current");
-//       var hash = location.hash;
-//       $(".js-tab-info-content").hide();
-//       $(hash).css("display", "flex");
-//       $(
-//         '.js-tab-info-menu[data-number="' + hash.replace("#", "") + '"]'
-//       ).addClass("current");
-//     } else {
-//       // 初期状態で最初のタブコンテンツを表示
-//       $(".js-tab-info-content:first-of-type").css("display", "flex");
-//     }
-  
-//     // タブメニューがクリックされたときの処理
-//     $(".js-tab-info-menu").on("click", function () {
-//       // 他のタブメニューアイテムの選択状態を解除
-//       $(".js-tab-info-menu").removeClass("current");
-//       // クリックされたタブメニューアイテムを選択状態に
-//       $(this).addClass("current");
-//       // すべてのタブコンテンツを非表示
-//       $(".js-tab-info-content").hide();
-//       // 対応するタブコンテンツを表示
-//       var dataNumber = $(this).attr("data-number");
-//       $("#" + dataNumber).fadeIn(400);
-//     });
-  
-//     var hash = window.location.hash;
-//     if (hash) {
-//       $(".js-tab-info-content").hide();
-//       $(hash).show();
-//       $(
-//         '.js-tab-info-menu[data-number="' + hash.replace("#", "") + '"]'
-//       ).addClass("current");
-//     }
-  
-//     // クエリパラメーターでタブを指定する場合の処理
-//     // $('a[href*="information.html?id="]').on('click', function(e) {
-//     //   var targetId = $(this).attr('href').split('=')[1];
-//     //   var targetTab = $('#tab' + targetId);
-    
-//     //   $('.js-tab-info-menu').removeClass('current');
-//     //   $('.js-tab-info-menu[data-number="tab' + targetId + '"]').addClass('current');
-    
-//     //   $('.js-tab-info-content').hide();
-//     //   targetTab.fadeIn(400);
-//     // });
-
-//     // アンカーリンクをつけないとリンクが遷移しない
-// // アンカーリンクなしで遷移するようなjsの記述をしてください
-
-// $('a[href*="information.html?id="]').on('click', function(e) {
-//   e.preventDefault(); // リンクのデフォルト動作をキャンセル
-
-//   var targetId = $(this).attr('href').split('=')[1];
-//   var targetTab = $('#tab' + targetId);
-
-//   $('.js-tab-info-menu').removeClass('current');
-//   $('.js-tab-info-menu[data-number="tab' + targetId + '"]').addClass('current');
-
-//   $('.js-tab-info-content').hide();
-//   targetTab.fadeIn(400);
-// });
-    
-// });
-
-
 $(document).ready(function () {
   var tabButton = $(".js-tab-info-menu"),
     tabContent = $(".js-tab-info-content");
@@ -300,7 +220,6 @@ $(document).ready(function () {
       }
     });
   }
-
   // ページ読み込み時にクエリパラメーターを確認してタブを表示
   var params = new URLSearchParams(window.location.search);
   var tab = params.get('id');
